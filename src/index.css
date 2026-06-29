@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -108,4 +108,61 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+} */
+
+/* @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    /* Desktop Font Sizes */
+    --fs-xs: 12px;
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 24px;
+    --fs-2xl: 32px;
+    --fs-3xl: 48px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color:#163B7A;
+    font-size: var(--fs-md);
+    font-weight: 400;
+}
+h1{font-weight: 700;}
+h2{font-weight: 600;font-size:var(--fs-2xl);line-height: 40px;}
+ul, address, figure{margin: 0;padding: 0;}
+li{list-style-type: none;}
+a{text-decoration: none;}
+button{margin: 0;padding: 0;border: none;}
+.flexCenter{display: flex;align-items: center;justify-content: center;}

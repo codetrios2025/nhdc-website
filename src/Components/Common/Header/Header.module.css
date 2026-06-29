@@ -1,0 +1,81 @@
+.topHead{position: relative;padding: 10px 0;background: #eef3fa;}
+.logo{position: relative;}
+.logo img{width: 80px;}
+address ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+address li{
+  margin-left: 30px;
+}
+address li a{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+}
+address li a p{ 
+  margin: 0;
+}
+address li a p span{
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #df1123;
+}
+address li a .icon{
+  width: 30px;
+  height: 30px;
+  /* background: #22335c; */
+  border: 1px solid #22335c;
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: #22335c;
+}
+address li a:hover{
+  color:#163B7A
+}
+address li a:hover .icon{
+  background: #fed926;
+  border-color: #fed926;
+}
+.bookBtn{
+  background: #22335c;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #fff;
+}
+.bookBtn:hover{
+  background: #fed926;
+  color: #000;
+}
+.mainHeader{
+  padding: 10px 0;
+}
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+  margin-left: 30px;
+}
+nav ul li a{
+  font-weight: 500;
+  color: #000;
+  padding: 20px 0;
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+nav ul li a:hover, nav ul li a.active{
+  border-color: #163B7A;
+  color:#163B7A
+}
