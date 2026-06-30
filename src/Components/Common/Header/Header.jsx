@@ -24,7 +24,7 @@ const Header = () => {
                   <li>
                     <a href="tel:+91 0000000000" >
                       <div className={Style.icon}><FaHeadset /></div>
-                      <p><span>24*7 Emergency</span> +01 00000 00000</p>
+                      <p><span>24*7 Emergency</span> +91 98291 43239</p>
                     </a>
                   </li>
                   <li>
