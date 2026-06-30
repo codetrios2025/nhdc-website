@@ -150,17 +150,19 @@ code {
     --fs-md: 16px;
     --fs-lg: 18px;
     --fs-xl: 24px;
+    --fs-xxl: 28px;
     --fs-2xl: 32px;
     --fs-3xl: 48px;
 }
 body {
     font-family: 'Poppins', sans-serif;
-    color:#163B7A;
-    font-size: var(--fs-md);
+    color:#16366a;
+    font-size: var(--fs-sm);
     font-weight: 400;
 }
 h1{font-weight: 700;}
-h2{font-weight: 600;font-size:var(--fs-2xl);line-height: 40px;}
+h2{font-weight: 600;font-size:var(--fs-2xl);line-height: 40px;color:#16366a}
+h5{font-weight: 600;}
 ul, address, figure{margin: 0;padding: 0;}
 li{list-style-type: none;}
 a{text-decoration: none;}

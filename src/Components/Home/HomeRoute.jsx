@@ -3,6 +3,7 @@ import HeroBanner from "./HeroBanner";
 import Services from "./Services";
 import OurVideos from "./OurVideos";
 import OurDoctor from "./OurDoctor";
+import Support from "./Support";
 const HomeRoute = ()=>{
   return(
     <>
@@ -10,6 +11,7 @@ const HomeRoute = ()=>{
       <Services />
       <OurVideos />
       <OurDoctor />
+      <Support />
     </>
   )
 }

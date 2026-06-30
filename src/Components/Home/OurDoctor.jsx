@@ -33,9 +33,9 @@ const OurDoctor = () =>{
                   <li><div className={Style.icon}><FaUserMd /></div> Child Specialist</li>
                   <li><div className={Style.icon}><GiLungs /></div> Asthma & Respiratory Care</li>
                   <li><div className={Style.icon}><LuBaby /></div> Newborn Care</li>
-                  <li><div className={Style.icon}><FaSyringe /></div> Vaccination & Immunization</li>
+                  {/* <li><div className={Style.icon}><FaSyringe /></div> Vaccination & Immunization</li>
                   <li><div className={Style.icon}><FaChild /></div> Growth Monitoring</li>
-                  <li><div className={Style.icon}><FaHeartbeat /></div> Personalized Patient Care</li>
+                  <li><div className={Style.icon}><FaHeartbeat /></div> Personalized Patient Care</li> */}
                 </ul>
                 <a href="" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
                   Knoe More About Doctor <div className={Style.icon}><GoArrowRight /></div>

@@ -3,8 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link, NavLink  } from "react-router-dom";
 import Style from './Header.module.css';
 import { BiSolidPhoneCall } from "react-icons/bi";
-import { MdMail } from "react-icons/md";
+import { IoIosMail } from "react-icons/io";
+import { IoCalendarOutline } from "react-icons/io5";
 import Logo from '../../../assets/images/nhdc-logo.png'
+import { FaHeadset } from "react-icons/fa";
+
 const Header = () => {
   return(
     <header role="banner">
@@ -16,16 +19,17 @@ const Header = () => {
                 <ul>
                   <li>
                     <a href="mailto:namokarhospitaldeoli.com"  aria-label="Email Namokar Hospital">
-                      <div className={Style.icon}><MdMail /></div> namokarhospitaldeoli.com</a>     
+                      <div className={Style.icon}><IoIosMail /></div> namokarhospitaldeoli.com</a>     
                   </li>
                   <li>
                     <a href="tel:+91 0000000000" >
-                      <div className={Style.icon}><BiSolidPhoneCall /></div>
+                      <div className={Style.icon}><FaHeadset /></div>
                       <p><span>24*7 Emergency</span> +01 00000 00000</p>
                     </a>
                   </li>
                   <li>
-                    <button type="button" className={Style.bookBtn} aria-label="Book Appointment">Book Appointment</button>
+                    <button type="button" className={Style.bookBtn} aria-label="Book Appointment">
+                      <span className={Style.icon}><IoCalendarOutline /></span> Book Appointment</button>
                   </li>
                 </ul>
               </address>

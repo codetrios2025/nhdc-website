@@ -17,7 +17,7 @@ const Services = () =>{
           <Col>
             <div className={Style.servicesList}>
               <div className={Style.listBox}>
-                <span className={Style.icon}><TbBulbFilled color="red" /></span>
+                <span className={Style.icon}><TbBulbFilled /></span>
                 <h6>Emergency</h6>
                 <p>24×7 Support</p>
               </div>

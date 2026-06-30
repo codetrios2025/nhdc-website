@@ -2,8 +2,8 @@ import React from "react";
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Style from '../CSS/Global.module.css';
-import BannerImg from '../../assets/images/banner_image.webp';
-import { FaRegCalendarAlt } from "react-icons/fa";
+import BannerImg from '../../assets/images/hospital-slide.webp';
+import { IoCalendarOutline } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -68,7 +68,7 @@ console.log("typeof =", typeof Carousel);
           </ul>
           <div className={Style.bannerBtn}>
             <button type="button" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
-              <div className={Style.icon}><FaRegCalendarAlt /></div> Book Appointment
+              <div className={Style.icon}><IoCalendarOutline /></div> Book Appointment
             </button>
             <a href="tel:0000000000" className={'flexCenter ' + Style.secondryBtn} aria-label="Call Hospital">
               <div className={Style.icon}><IoCall /></div> Call Now
