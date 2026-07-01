@@ -50,12 +50,12 @@ const Header = () => {
                 <nav aria-label="Primary Navigation">
                   <ul className="flexCenter">
                     <li><NavLink to="/" title="Home">Home</NavLink></li>
-                    <li><NavLink to="/" title="About Us">About Us</NavLink></li>
-                    <li><NavLink to="/" title="Services">Services</NavLink></li>
-                    <li><NavLink to="/" title="news">News</NavLink></li>
-                    <li><NavLink to="/" title="Health Tips">Health Tips</NavLink></li>
-                    <li><NavLink to="/" title="Videos">Videos</NavLink></li>
-                    <li><NavLink to="/" title="Contact Us">Contact Us</NavLink></li>
+                    <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
+                    <li><NavLink to="/services" title="Services">Services</NavLink></li>
+                    <li><NavLink to="/news" title="news">News</NavLink></li>
+                    <li><NavLink to="/health-tips" title="Health Tips">Health Tips</NavLink></li>
+                    <li><NavLink to="/videos" title="Videos">Videos</NavLink></li>
+                    <li><NavLink to="/contact" title="Contact Us">Contact Us</NavLink></li>
                   </ul>
                 </nav>
               </div>

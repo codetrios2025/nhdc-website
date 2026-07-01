@@ -3,6 +3,7 @@ import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
+//icon
 import { IoCalendarOutline } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import Doctor from '../../assets/images/dr-img.webp';
+import Doctor from '../../assets/images/dr.rakesh.webp';
 //icon
 import { GoArrowRight } from "react-icons/go";
 import { FaStethoscope, FaUserMd, FaSyringe, FaChild, FaHeartbeat } from "react-icons/fa";
@@ -38,7 +38,7 @@ const OurDoctor = () =>{
                   <li><div className={Style.icon}><FaHeartbeat /></div> Personalized Patient Care</li> */}
                 </ul>
                 <a href="" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
-                  Knoe More About Doctor <div className={Style.icon}><GoArrowRight /></div>
+                  Know More About Doctor <div className={Style.icon}><GoArrowRight /></div>
                 </a>
               </div>
             </div>
