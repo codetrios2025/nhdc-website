@@ -168,3 +168,20 @@ li{list-style-type: none;}
 a{text-decoration: none;}
 button{margin: 0;padding: 0;border: none;}
 .flexCenter{display: flex;align-items: center;justify-content: center;}
+
+
+@media only screen and (max-width: 1199px) {
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    /* Desktop Font Sizes */
+    --fs-xs: 11px;
+    --fs-sm: 13px;
+    --fs-md: 14px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-xxl: 28px;
+    --fs-2xl: 26px;
+    --fs-3xl: 42px;
+}  
+h2{line-height: 30px;}
+}

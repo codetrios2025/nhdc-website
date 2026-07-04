@@ -83,3 +83,56 @@ nav ul li a:hover, nav ul li a.active{
    border-color: #e0326f;
   color:#e0326f
 }
+.menuBtn {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1199px) {
+.bookBtn{    padding: 5px 15px;font-size: 13px;}
+address li {
+    margin-left: 20px;
+}
+nav ul li {
+    margin-left: 30px;
+}
+  
+}
+@media only screen and (max-width: 991px) {
+address li a .icon{width: 22px;height: auto;font-size: 20px;margin-right: 5px;}
+nav ul li {margin-left: 22px;}
+
+}
+
+@media only screen and (max-width: 767px) {
+  .topHead ul li:first-child{display: none;}
+  .bookBtn {padding: 5px 8px;font-size: 11px;}
+  .bookBtn .icon{font-size: 14px}
+.menuBtn {
+        display: block;
+        z-index: 1001;
+    }  
+.navMenu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #fff;
+        transition: .4s;
+        box-shadow: -5px 0 20px rgba(0,0,0,.15);
+        padding-top: 90px;
+        z-index: 1000;
+    }  
+.navMenu.showMenu {
+        right: 0;
+    }    
+.navMenu ul {
+        flex-direction: column;
+        gap: 0;
+    }      
+    nav ul li{margin: 0;width: 100%;}
+    nav ul li a{padding: 15px 20px;border-bottom: 1px solid #e7e7e7;}
+}
