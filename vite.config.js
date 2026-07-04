@@ -8,4 +8,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ["react-multi-carousel"],
   },
+  css: {
+    modules: {
+      generateScopedName: "[local]",
+    },
+  },
 });

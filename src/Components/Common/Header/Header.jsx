@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, NavLink  } from "react-router-dom";
 import Style from './Header.module.css';
@@ -6,9 +6,14 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { IoIosMail } from "react-icons/io";
 import { IoCalendarOutline } from "react-icons/io5";
 import Logo from '../../../assets/images/nhdc-logo.png'
-import { FaHeadset } from "react-icons/fa";
+import { FaHeadset, FaBars, FaTimes } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { CiMenuBurger } from "react-icons/ci";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
   return(
     <header role="banner">
       <div className={Style.topHead}>
@@ -47,15 +52,18 @@ const Header = () => {
                     <img src={Logo} alt="Namokar Hospital Home" />
                   </a>
                 </div>
-                <nav aria-label="Primary Navigation">
+                 <button className={Style.menuBtn} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
+                  {menuOpen ? <IoClose /> : <CiMenuBurger />}
+                </button>
+                <nav aria-label="Primary Navigation" className={`${Style.navMenu} ${menuOpen ? Style.showMenu : ""}`}>
                   <ul className="flexCenter">
-                    <li><NavLink to="/" title="Home">Home</NavLink></li>
-                    <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
-                    <li><NavLink to="/services" title="Services">Services</NavLink></li>
-                    <li><NavLink to="/news" title="news">News</NavLink></li>
-                    <li><NavLink to="/health-tips" title="Health Tips">Health Tips</NavLink></li>
-                    <li><NavLink to="/videos" title="Videos">Videos</NavLink></li>
-                    <li><NavLink to="/contact" title="Contact Us">Contact Us</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/" title="Home">Home</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/about" title="About Us">About Us</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/services" title="Services">Services</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/news" title="news">News</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/health-tips" title="Health Tips">Health Tips</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/videos" title="Videos">Videos</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/contact" title="Contact Us">Contact Us</NavLink></li>
                   </ul>
                 </nav>
               </div>

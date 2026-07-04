@@ -7,7 +7,7 @@
 /* Hero Banner CSS */
 .heroBanner {position: relative;overflow: hidden;}
 .bannerItem img {width: 100%;height: 650px;object-fit: cover;display: block;}
-.bannerContent {position: absolute;inset: 0;display: flex;align-items: center;color: #16366a;padding-left: 100px;
+.bannerContent {position: absolute;inset: 0;display: flex;align-items: center;color: #16366a;padding-left: 100px;max-width: 100%;
     width: 1020px;background: #f3f7fc;background: linear-gradient(272deg, rgb(243 247 252 / 0%) 20%, rgb(243 247 252 / 100%) 44%, rgba(243 247 252) 100%);
 }
 .bannerContent h1{font-size: var(--fs-3xl);color: #16366a;margin-bottom: 20px;}
@@ -25,7 +25,7 @@
 .servicesList .listBox:last-child{border: none;}
 .servicesList .listBox .icon{font-size: 50px;width: 50px;height: 50px;color:#16366a}
 .servicesList h6{font-weight: 600;font-size: var(--fs-md);margin: 0;}
-.servicesList p{margin: 0;font-weight: 3500;}
+.servicesList p{margin: 0;font-weight: 400;}
 .specialContainer{display: flex;gap: 30px;margin-top: 50px;}
 .specialItem{flex: 1;border-radius: 20px;overflow: hidden;position: relative;height: 500px;}
 .specialItem figure{width: 100%;height: 100%;}
@@ -121,3 +121,99 @@
 .whyUs .content h5{text-align: center;font-size: var(--fs-md);line-height: 22px;margin: 10px 0;}
 .whyUs .content p{    text-align: left;line-height: 24px;margin: 0;}
 .whyUs figure img{width:100%;border-radius:10px}
+
+@media only screen and (max-width: 1400px) {
+    .specialItem .content{padding-right: 150px;}
+}
+
+@media only screen and (max-width: 1199px) {
+.primeryBtn, .secondryBtn{padding: 5px 15px;font-size: 13px;}
+.primeryBtn .icon, .secondryBtn .icon{font-size: 17px;}
+.bannerContent ul li{line-height: 30px;}
+.bannerItem img{height: 540px;}
+.servicesList{padding: 20px;margin-top: -60px;}
+.servicesList .listBox .icon{font-size: 40px;}
+.specialItem{height: 430px;}
+.videoItem h3{line-height: 20px;}
+.drContent p{margin: 0 0 5px;}
+.supportContainer .time{width: 60px;height: 60px;border: 7px solid #fff;font-size:14px}
+.supportContainer .call .icon{font-size: 40px;margin-right: 10px;top: -3px;}
+.supportContainer .call a{font-size: 14px;}
+}
+
+@media only screen and (max-width: 991px) {
+.bannerContent {padding-left: 50px;background: linear-gradient(272deg, rgb(243 247 252 / 0%) 18%, rgb(243 247 252 / 100%) 64%, rgba(243 247 252) 100%);}
+.bannerContent h1{font-size: 32px;line-height: normal;}
+.bannerContent .box{width: 500px;max-width: 100%;}
+
+.bannerContent p{padding-right: 0;}
+.specialContainer{flex-direction: column;}
+.specialItem{height: auto;}
+.specialItem figure{height: 400px;}
+.videoHead>div{width:70%}
+.videoElem{flex-wrap: wrap;gap: 0}
+.videoElem .videoItem {
+    flex: auto;
+    width: 50%;
+    padding: 0 7px;
+    margin-bottom: 30px;
+}    
+.drConainer .drImg {
+    display: flex;
+    align-items: flex-end;
+}
+.drConainer .drImg figure {
+    display: flex;
+    align-items: flex-end;
+}
+.drConainer .drImg figure img {
+    height: auto;
+    object-fit: contain;
+}
+.drContent p{padding-right: 0;}
+.drContent{width:410px;margin-bottom: 20px;}
+.drContent ul{flex-direction: column;}
+.supportContainer{padding: 10px 20px;}
+.supportContainer .content{margin: 0 30px 0 30px;}
+.servicesList{        padding: 10px;}
+.servicesList{        flex-wrap: wrap;}
+.servicesList .listBox{width:33%;flex:auto;border:none;padding-bottom: 20px;}
+.specialItem .content{        padding-right: 310px;}
+}
+
+
+@media only screen and (max-width: 767px) {
+.bannerContent{padding-left:15px;background:linear-gradient(272deg, rgb(243 247 252 / 0%) 0%, rgb(243 247 252 / 100%) 64%, rgba(243 247 252) 100%)}
+.bannerContent h1{font-size: 28px;line-height: normal;margin-bottom: 10px;}
+.servicesList .listBox{width:50%}
+.specialItem .content {padding-right: 0;}
+.videoHead {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.videoHead>div{width:100%;margin-bottom: 20px}
+.videoContainer{padding: 25px 15px 10px;}
+.drConainer{flex-direction: column;padding: 30px 15px 0;background: transparent!important;}
+.drConainer .drImg{order:2;        width: 200px;
+        margin: 0 auto;}
+.drContent{order:1;padding: 0;width:100%;margin-bottom: 20px;}
+.supportContainer{flex-direction: column;padding: 20px 15px;gap: 20px;}
+.drConainer::before{background:#ebf0f8}
+.drConainer .drImg .drExp p{font-size: 12px;}
+.drConainer .drImg .drExp p strong{font-size: 14px;}
+.supportContainer .content{text-align: center;margin: 0}
+.info ul{width: 200px;margin: 0 auto;}
+.footerLink{margin-top: 20px;}
+.footerLink h4 {margin-left: 0;}
+.footerLink .link ul, .addresInfo {padding-left: 0;border-left: none;height: auto;}
+.link .address {margin-bottom: 10px;}
+.map{margin-bottom: 20px;}
+.companyRights .content p, .companyRights .content p a{text-align: center;justify-content: center;gap: 5px;}
+.bannerBtn{flex-direction: column;align-items: flex-start;}
+}
+
+@media only screen and (max-width: 580px) {
+.videoElem .videoItem{width:100%;padding:0}
+}
