@@ -7,7 +7,7 @@ import AosRoute from "../Common/AosRoute";
 import HomeRoute from "../Home/HomeRoute";
 //Pages
 import AboutUs from "../Pages/About";
-
+import Services from "../Pages/Service";
 const AppRoute = () =>{
   return(
     <>
@@ -17,6 +17,7 @@ const AppRoute = () =>{
         <Route path='/' element={<LayoutScreen />}>
           <Route index element={<HomeRoute />} />
           <Route path='/about' element={<AboutUs />} />
+          <Route path='/services' element={<Services />} />
         </Route>
       </Routes>
     </>
