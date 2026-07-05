@@ -9,12 +9,21 @@ import Logo from '../../../assets/images/nhdc-logo.png'
 import { FaHeadset, FaBars, FaTimes } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
-
+import BookingForm from "../../Booking/BookingForm";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+  const [booking, setBooking] = useState(false);
+
+  const bookingHandler = ()=>{
+    setBooking(true)
+  }
+  const closeBooking = ()=>{
+    setBooking(false)
+  }
 
   return(
+    <>
     <header role="banner">
       <div className={Style.topHead}>
         <Container>
@@ -33,7 +42,7 @@ const Header = () => {
                     </a>
                   </li>
                   <li>
-                    <button type="button" className={Style.bookBtn} aria-label="Book Appointment">
+                    <button onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
                       <span className={Style.icon}><IoCalendarOutline /></span> Book Appointment</button>
                   </li>
                 </ul>
@@ -63,7 +72,7 @@ const Header = () => {
                     <li><NavLink onClick={closeMenu} to="/news" title="news">News</NavLink></li>
                     <li><NavLink onClick={closeMenu} to="/health-tips" title="Health Tips">Health Tips</NavLink></li>
                     <li><NavLink onClick={closeMenu} to="/videos" title="Videos">Videos</NavLink></li>
-                    <li><NavLink onClick={closeMenu} to="/contact" title="Contact Us">Contact Us</NavLink></li>
+                    <li><NavLink onClick={closeMenu} to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                   </ul>
                 </nav>
               </div>
@@ -72,6 +81,14 @@ const Header = () => {
         </Container>
       </div>
     </header>
+    {booking &&
+      <div className={Style.bookingOverLay}>
+        <div className={Style.bookingPop}>
+          <BookingForm close={closeBooking} />
+        </div>
+      </div>
+    }
+    </>
   )
 }
 
