@@ -4,7 +4,7 @@ import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
 import serviceImg01 from '../../assets/images/services_img01.webp';
 import Support from '../Home/Support';
-import OurDoctor from '../Home/OurDoctor';
+import OurDoctor from './AboutOurDoctor';
 //icon
 import { FaCheckCircle, FaBullseye, FaEye, FaHandshake, FaAmbulance } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
