@@ -22,345 +22,140 @@ const AboutUs = () =>{
     <div className={Style.aboutPage}>
       <div className={Style.innerBanner}>
           <img src={BannerImg} alt="Namokar Hospital & Diagnostic Centre" />
-          <div className={Style.bannerContent}>
-    <Container>
-      <h1>About Namokar Hospital & Diagnostic Centre</h1>
-
-      <p>
-        Committed to delivering compassionate pediatric healthcare,
-        advanced diagnostics, and trusted medical services with
-        excellence for over 25+ years.
-      </p>
-    </Container>
-  </div>
       </div>
       <OurDoctor />
       <div className={`${Style.whoWe} ${Style.commonSpace}`}>
-            <Container>
-              <Row>
-                <Col md={6}>
+        <Container>
+          <Row>
+            <Col md={6}>
+              <div className={Style.content}>
+                <h2>Who We Are</h2>
+                <p>Established with the vision of delivering quality pediatric healthcare under one roof, Namokar Hospital & Diagnostic Centre has become a trusted name for child healthcare services in Deoli.</p>
+                <p>Our hospital offers preventive healthcare, advanced diagnostics, emergency treatment, vaccination programs, asthma management, and newborn care. Every patient is treated with compassion, respect, and personalized attention.</p>
+                <ul>
+                  <li><span className={Style.icon}><FaCheckCircle /></span>Expert pediatric care for every stage of childhood</li>
+                  <li><span className={Style.icon}><FaCheckCircle /></span>Advanced diagnostics with modern technology</li>
+                  <li><span className={Style.icon}><FaCheckCircle /></span>24×7 Emergency Medical Support</li>
+                  <li><span className={Style.icon}><FaCheckCircle /></span>Family-Centered Healthcare Approach</li>
+                </ul>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className={Style.highLights}>
+                <div className={Style.box}>
+                  <div className={Style.icon}><FaPeopleGroup /></div>
                   <div className={Style.content}>
-                    <h2>Our Story</h2>
-
-                    <p>
-                      Namokar Hospital & Diagnostic Centre was established with a simple
-                      vision—to provide trusted, ethical, and accessible healthcare for
-                      children and families in Deoli and nearby communities. Since its
-                      inception, the hospital has been committed to delivering medical care
-                      that combines clinical expertise with compassion.
-                    </p>
-
-                    <p>
-                      Under the leadership of <strong>Dr. Rajesh Jain</strong>, the hospital
-                      has grown into a healthcare centre where every patient is treated with
-                      respect, transparency, and personalized attention. We believe that
-                      successful treatment begins with understanding each patient's unique
-                      needs and building lasting relationships with families.
-                    </p>
-
-                    <p>
-                      Our focus is not only on treating illness but also on promoting
-                      healthy childhood development through preventive healthcare, timely
-                      diagnosis, and continuous medical guidance. Every step we take is
-                      driven by our commitment to improving the quality of life for the
-                      community we serve.
-                    </p>
-
-                    <ul>
-                      <li>
-                        <span className={Style.icon}><FaCheckCircle /></span>
-                        Ethical and transparent medical practice
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}><FaCheckCircle /></span>
-                        Personalized attention for every patient and family
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}><FaCheckCircle /></span>
-                        A patient-first approach built on trust and compassion
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}><FaCheckCircle /></span>
-                        Commitment to continuous improvement and quality healthcare
-                      </li>
-                    </ul>
+                    <h3>10+ <span>Years of Service</span></h3>
+                    <p>Providing trusted healthcare services since our establishment.</p>
                   </div>
-                </Col>
-
-                <Col md={6}>
-                  <div className={Style.highLights}>
-
-                    
-                    <div className={Style.box}>
-                      <div className={Style.icon}>
-                        <MdFamilyRestroom />
-                      </div>
-
-                      <div className={Style.content}>
-                        <h3>10,000+ <span>Happy Patients</span></h3>
-
-                        <p>
-                          Thousands of children and families have trusted NHDC for quality
-                          healthcare.
-                        </p>
-                      </div>
-                    </div>
-                    <div className={Style.box}>
-                      <div className={Style.icon}>
-                        <MdFamilyRestroom />
-                      </div>
-
-                      <div className={Style.content}>
-                        <h3>Family-Centered Care</h3>
-
-                        <p>
-                          We work closely with parents and caregivers, encouraging open
-                          communication throughout every stage of treatment.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className={Style.box}>
-                      <div className={Style.icon}>
-                        <FaUserDoctor />
-                      </div>
-
-                      <div className={Style.content}>
-                        <h3>Clinical Excellence</h3>
-
-                        <p>
-                          We combine medical knowledge, modern technology, and continuous
-                          learning to deliver high-quality healthcare services.
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className={Style.box}>
-                      <div className={Style.icon}>
-                        <MdEmergency />
-                      </div>
-
-                      <div className={Style.content}>
-                        <h3>Community Trust</h3>
-
-                        <p>
-                          Built on years of dedication, honesty, and compassionate care,
-                          we are proud to be a trusted healthcare partner for families in
-                          Deoli and the surrounding region.
-                        </p>
-                      </div>
-                    </div>
-
+                </div>
+                <div className={Style.box}>
+                  <div className={Style.icon}><MdFamilyRestroom /></div>
+                  <div className={Style.content}>
+                    <h3>5000+ <span>Happy Patients</span></h3>
+                    <p>Thousands of families have trusted us for quality healthcare.</p>
                   </div>
-                </Col>
-              </Row>
-            </Container>
+                </div>
+                <div className={Style.box}>
+                  <div className={Style.icon}><FaUserDoctor /></div>
+                  <div className={Style.content}>
+                    <h3>15+ <span>Expert Doctors</span></h3>
+                    <p>Dedicated specialists committed to compassionate treatment.</p>
+                  </div>
+                </div>
+                <div className={Style.box}>
+                  <div className={Style.icon}><MdEmergency /></div>
+                  <div className={Style.content}>
+                    <h3>24×7 <span>Emergency Care</span></h3>
+                    <p>Emergency medical assistance whenever you need us.</p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <div className={`${Style.missionSec} ${Style.commonSpace}`}>
-      <Container>
+        <Container>
           <Row>
             <Col>
               <div className={Style.missionContainer}>
-
-                {/* Mission */}
                 <div className={Style.box}>
-                  <div className={Style.icon}>
-                    <FaBullseye />
-                  </div>
-
+                  <div className={Style.icon}><FaBullseye /></div>
                   <div className={Style.content}>
                     <h3>Our Mission</h3>
-
-                    <p>
-                      To create a healthcare environment where every child and family
-                      receives compassionate, ethical, and personalized medical care.
-                      We are committed to building lifelong relationships based on
-                      trust, clinical excellence, and respect while continuously
-                      improving the quality of healthcare in our community.
-                    </p>
+                    <p>To provide accessible, affordable, and high-quality healthcare with compassion, integrity, and clinical excellence while improving the health and well-being of every child and family we serve.</p>
                   </div>
                 </div>
-
-                {/* Vision */}
                 <div className={Style.box}>
-                  <div className={Style.icon}>
-                    <FaEye />
-                  </div>
-
+                  <div className={Style.icon}><FaEye /></div>
                   <div className={Style.content}>
                     <h3>Our Vision</h3>
-
-                    <p>
-                      To be recognized as one of the most trusted healthcare
-                      institutions in Rajasthan by delivering patient-centered care,
-                      embracing medical innovation, and setting new standards of
-                      excellence in child health and family wellness.
-                    </p>
+                    <p>To become the most trusted pediatric healthcare and diagnostic center by delivering world-class medical services through innovation, expertise, and patient-centered care.</p>
                   </div>
                 </div>
-
-                {/* Values */}
                 <div className={Style.box}>
-                  <div className={Style.icon}>
-                    <IoDiamond />
-                  </div>
-
+                  <div className={Style.icon}><IoDiamond /></div>
                   <div className={Style.content}>
-                    <h3>Our Core Values</h3>
-
+                    <h3>Our Values</h3>
                     <ul>
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Compassion and empathy in every patient interaction.
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Honesty, integrity, and transparency in medical practice.
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Respect for every child, parent, and healthcare professional.
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Continuous learning and adoption of modern medical advancements.
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Commitment to patient safety, quality care, and ethical standards.
-                      </li>
-
-                      <li>
-                        <span className={Style.icon}>
-                          <FaCheckCircle />
-                        </span>
-                        Building lasting trust through responsible and reliable healthcare.
-                      </li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Compassion in Every Interaction</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Excellence in Clinical Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Integrity and Transparency</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Innovation and Continuous Learning</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Patient Safety First</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Respect for Every Individual</li>
                     </ul>
                   </div>
                 </div>
-
               </div>
             </Col>
           </Row>
         </Container>
       </div>
       <div className={`${Style.whyUs} ${Style.commonSpace}`}>
-       <Container>
-        <Row className="align-items-center">
-          <Col md={7}>
-            <div className={Style.content}>
-              <h2>Why Families Trust Namokar Hospital?</h2>
-
-              <p>
-                At Namokar Hospital & Diagnostic Centre, we believe healthcare is
-                built on trust, compassion, and clinical excellence. Our commitment
-                goes beyond treatment—we strive to provide every child and family
-                with a comfortable, transparent, and supportive healthcare
-                experience.
-              </p>
-
-              <ul>
-                <li>
-                  <div className={Style.icon}>
-                    <MdChildCare />
-                  </div>
-
-                  <div>
-                    <h5>Child-Friendly Environment</h5>
-                    <p>
-                      A welcoming atmosphere designed to make children feel safe,
-                      comfortable, and cared for during every visit.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className={Style.icon}>
-                    <FaPeopleGroup />
-                  </div>
-
-                  <div>
-                    <h5>Personalized Patient Care</h5>
-                    <p>
-                      Every child receives individual attention with treatment plans
-                      tailored to their specific healthcare needs.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className={Style.icon}>
-                    <ImLab />
-                  </div>
-
-                  <div>
-                    <h5>Reliable Diagnosis</h5>
-                    <p>
-                      Modern diagnostic facilities help support timely and informed
-                      clinical decisions for better patient care.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className={Style.icon}>
-                    <FaAmbulance />
-                  </div>
-
-                  <div>
-                    <h5>Accessible Healthcare</h5>
-                    <p>
-                      Convenient consultation, responsive support, and dedicated care
-                      for families in Deoli and nearby communities.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <div className={Style.icon}>
-                    <BsUmbrellaFill />
-                  </div>
-
-                  <div>
-                    <h5>Long-Term Health Partnership</h5>
-                    <p>
-                      We believe in building lasting relationships by supporting every
-                      stage of a child's healthy growth and development.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </Col>
-
-          <Col md={5}>
-            <figure>
-              <img
-                src={serviceImg01}
-                alt="Namokar Hospital & Diagnostic Centre"
-              />
-            </figure>
-          </Col>
-        </Row>
-      </Container>
+        <Container>
+          <Row>
+            <Col md={7}>
+              <div className={Style.content}>
+                <h2>Why Choose Namokar Hospital?</h2>
+                {/* <p>We combine medical expertise, modern infrastructure, and compassionate care to deliver exceptional healthcare experiences for children and families.</p> */}
+                <ul>
+                  <li>
+                    <div className={Style.icon}><MdChildCare /></div>
+                    <h5>Child-Centric Care</h5>
+                    <p>Healthcare services specially designed for infants, children, and adolescents.</p>
+                  </li>
+                  <li>
+                    <div className={Style.icon}><FaPeopleGroup /></div>
+                    <h5>Experienced Team</h5>
+                    <p>Qualified pediatricians and healthcare professionals with years of expertise.</p>
+                  </li>
+                  <li>
+                    <div className={Style.icon}><ImLab /></div>
+                    <h5>Advanced Facilities</h5>
+                    <p>Modern laboratory and diagnostic equipment for accurate and timely results.</p>
+                  </li>
+                  <li>
+                    <div className={Style.icon}><FaAmbulance /></div>
+                    <h5>24×7 Emergency Support</h5>
+                    <p>Immediate medical attention available around the clock.</p>
+                  </li>
+                  <li>
+                    <div className={Style.icon}><BsUmbrellaFill /></div>
+                    <h5>Comprehensive Healthcare</h5>
+                    <p>From preventive care to treatment and follow-up, everything under one roof.</p>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+            <Col md={5}>
+              <figure>
+                <img src={serviceImg01} alt="About Us" />
+              </figure>
+            </Col>
+          </Row>
+        </Container>
       </div>
       <Support />
     </div>

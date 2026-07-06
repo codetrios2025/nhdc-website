@@ -43,7 +43,7 @@ export default function Footer (){
                     <li><NavLink to="/" title="news">News</NavLink></li>
                     <li><NavLink to="/" title="Health Tips">Health Tips</NavLink></li>
                     <li><NavLink to="/" title="Videos">Videos</NavLink></li>
-                    <li><NavLink to="/" title="Contact Us">Contact Us</NavLink></li>
+                    <li><NavLink to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                 </ul>
               </div>
               <div className={Style.link}>

@@ -8,6 +8,8 @@ import HomeRoute from "../Home/HomeRoute";
 //Pages
 import AboutUs from "../Pages/About";
 import Services from "../Pages/Service";
+import BookAppointment from "../Booking/BookAppointmentPage";
+import ServiceNew from "../Pages/Service_my";
 const AppRoute = () =>{
   return(
     <>
@@ -18,6 +20,8 @@ const AppRoute = () =>{
           <Route index element={<HomeRoute />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/service-new' element={<ServiceNew />} />
+          <Route path='/book-appointment' element={<BookAppointment />} />
         </Route>
       </Routes>
     </>

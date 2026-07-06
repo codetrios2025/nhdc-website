@@ -5,164 +5,208 @@ import BannerImg from '../../assets/images/hospital-slide.webp';
 import serviceImg01 from '../../assets/images/services_img01.webp';
 import Support from '../Home/Support';
 import OurDoctor from '../Home/OurDoctor';
-import childImg from "../../assets/images/1.png";
-import asthmaImg from "../../assets/images/2.png";
-import newbornImg from "../../assets/images/3.png";
-import vaccineImg from "../../assets/images/4.png";
-import emergencyImg from "../../assets/images/5.png";
-import diagnosticImg from "../../assets/images/6.png";
-import { FaCheckCircle, FaBullseye, FaEye, FaHandshake, FaAmbulance } from "react-icons/fa";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { FaUserDoctor } from "react-icons/fa6";
-import { MdFamilyRestroom } from "react-icons/md";
-import { MdEmergency } from "react-icons/md";
-import { IoDiamond } from "react-icons/io5";
-import { MdChildCare } from "react-icons/md";
-import { ImLab } from "react-icons/im";
-import { BsUmbrellaFill } from "react-icons/bs";
-
-
-const services = [
-  {
-    title: "Child Specialist Care",
-    image: childImg,
-    text:
-      "Comprehensive healthcare for newborns, infants, children and adolescents with a focus on prevention, diagnosis and treatment.",
-    items: [
-      "Routine Child Check-ups",
-      "Fever & Infection Management",
-      "Nutrition Guidance",
-      "Growth & Development Assessment",
-      "Preventive Healthcare",
-    ],
-  },
-
-  {
-    title: "Asthma & Allergy Clinic",
-    image: asthmaImg,
-    text:
-      "Personalized care for children with asthma, allergies and respiratory conditions using modern diagnostic techniques.",
-    items: [
-      "Asthma Management",
-      "Allergy Consultation",
-      "Skin Prick Test (SPT)",
-      "ImmunoCAP Blood Test",
-      "Spirometry & FOT",
-    ],
-  },
-
-  {
-    title: "Newborn & Infant Care",
-    image: newbornImg,
-    text:
-      "Specialized care for newborns and infants with regular health assessments and parental guidance.",
-    items: [
-      "Newborn Examination",
-      "Breastfeeding Guidance",
-      "Growth Monitoring",
-      "Parent Counselling",
-    ],
-  },
-
-  {
-    title: "Vaccination & Immunization",
-    image: vaccineImg,
-    text:
-      "Complete vaccination services following the National Immunization Schedule.",
-    items: [
-      "Routine Vaccination",
-      "Vaccination Reminder",
-      "Child Health Record",
-    ],
-  },
-
-  {
-    title: "Emergency Pediatric Care",
-    image: emergencyImg,
-    text:
-      "Prompt and compassionate emergency medical care for infants and children.",
-    items: [
-      "Emergency Consultation",
-      "Rapid Assessment",
-      "Referral Support",
-    ],
-  },
-
-  {
-    title: "Advanced Diagnostic Services",
-    image: diagnosticImg,
-    text:
-      "Advanced diagnostic facilities available under one roof for accurate and timely diagnosis.",
-    items: [
-      "Spirometry",
-      "Forced Oscillation Technique (FOT)",
-      "Skin Prick Test",
-      "ImmunoCAP",
-      "EEG",
-      "Sonography",
-    ],
-  },
-];
+//icon
+import { FaCheckCircle, FaBullseye, FaEye, FaHandshake, FaAmbulance, FaHeartbeat, FaHeart } from "react-icons/fa";
+import { MdOutlineChildCare, MdMedicalServices, MdHealthAndSafety } from "react-icons/md";
+import {
+  GiLungs,
+  GiBabyFace,
+  GiMedicines,
+} from "react-icons/gi";
+import { FaSyringe, FaUserDoctor  } from "react-icons/fa6";
+import { PiFirstAidKitFill } from "react-icons/pi";
+import { RiParentFill, RiHospitalLine } from "react-icons/ri";
+import { BsClockHistory } from "react-icons/bs";
 
 const Services = () =>{
   return(
-   <div className={Style.servicesPage}>
-    <div className={Style.innerBanner}><img src={BannerImg} alt="Services"/>
-      <div className={Style.bannerContent}>
-        <h1>Our Medical Services</h1>
-        <p>Comprehensive pediatric healthcare, asthma & allergy care, preventive medicine and advanced diagnostic services for children and families.</p>
+    <div className={Style.servicesPage}>
+      <div className={Style.innerBanner}>
+          <img src={BannerImg} alt="Namokar Hospital & Diagnostic Centre" />
       </div>
-    </div>
-    <div className={`${Style.mainServices} ${Style.commonSpace}`}>
-      <Container>
-       <Row>
-  {services.map((s, i) => (
-    <Col lg={12} key={i} className="mb-5">
-      <Row
-        className={`align-items-center ${
-          i % 2 !== 0 ? "flex-lg-row-reverse" : ""
-        }`}
-      >
-        {/* Image */}
-        <Col lg={6}>
-          <div className={Style.serviceImg}>
-            <img src={s.image} alt={s.title} className="img-fluid rounded-4" />
-          </div>
-        </Col>
-
-        {/* Content */}
-        <Col lg={6}>
-          <div className={Style.serviceContent}>
-            <h2>{s.title}</h2>
-
-            <p>{s.text}</p>
-
-            <ul className={Style.featureList}>
-              {s.items.map((item, index) => (
-                <li key={index}>
-                  <span className={Style.icon}>
-                    <FaCheckCircle />
-                  </span>
-                  {item}
+      <div className={`${Style.mainServices} ${Style.commonSpace}`}>
+        <Container>
+          <Row>
+            <Col>
+              <div className={Style.head}>
+                <h2>Our Services</h2>
+                <p>Specialized care, advanced technology, and compassionate treatment — all under one roof.</p>
+              </div>
+              <div className={Style.mainContainer}>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><MdOutlineChildCare /></span>
+                  </div>
+                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>Child Specialist Care</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><GiLungs /></span>
+                  </div>
+                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>Asthma & Allergy Care</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><FaHeartbeat /></span>
+                  </div>
+                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>OPD Consultation</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><MdMedicalServices /></span>
+                  </div>
+                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>Diagnostics</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><FaAmbulance /></span>
+                  </div>
+                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>Emergency Care</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className={`${Style.whyChoose} ${Style.commonSpace}`}>
+        <Container>
+          <Row>
+            <Col>
+              <div className={Style.whyChooseContainer}>
+                <h2>Why Choose <span>Namokar Hospital?</span></h2>
+                <div className={Style.whyChooseElem}>
+                  <div className={Style.box}>
+                    <div className={Style.icon}><FaUserDoctor  /></div>
+                    <h4>Experienced Doctors</h4>
+                    <p>Highly qualified pediatricians and healthcare professionals dedicated to quality treatment.</p>
+                  </div>
+                  <div className={Style.box}>
+                    <div className={Style.icon}><MdOutlineChildCare  /></div>
+                    <h4>Child-Friendly Environment</h4>
+                    <p>A safe, hygienic, and comfortable atmosphere designed especially for children.</p>
+                  </div>
+                  <div className={Style.box}>
+                    <div className={Style.icon}><RiHospitalLine  /></div>
+                    <h4>Advanced Facilities</h4>
+                    <p>State-of-the-art diagnostic equipment and modern healthcare infrastructure.</p>
+                  </div>
+                  <div className={Style.box}>
+                    <div className={Style.icon}><BsClockHistory  eChildCare /></div>
+                    <h4>24×7 Availability</h4>
+                    <p>Round-the-clock emergency and medical support whenever you need us.</p>
+                  </div>
+                  <div className={Style.box}>
+                    <div className={Style.icon}><FaHeart  /></div>
+                    <h4>Compassionate Care</h4>
+                    <p>Personalized healthcare services delivered with empathy, respect, and dedication.</p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className={`${Style.medicalSec} ${Style.commonSpace}`}>
+        <Container>
+          <Row>
+            <Col>
+              <h2>Other Medical Services</h2>
+              <ul>
+                <li>
+                  <div className={Style.icon}><GiBabyFace /></div>
+                  <p>Newborn Care</p>
                 </li>
-              ))}
-            </ul>
-
-              {/* Optional Button */}
-            {/* <Link to="/contact" className={Style.primeryBtn}>
-                Book Appointment
-            </Link> */}
-
-          </div>
-        </Col>
-      </Row>
-    </Col>
-  ))}
-</Row>
-         
-          </Container>
-          </div>
-          <Support/></div>
+                <li>
+                  <div className={Style.icon}><FaSyringe /></div>
+                  <p>Immunization</p>
+                </li>
+                <li>
+                  <div className={Style.icon}><GiMedicines /></div>
+                  <p>Nutritional Guidance</p>
+                </li>
+                <li>
+                  <div className={Style.icon}><MdHealthAndSafety /></div>
+                  <p>Health Checkups</p>
+                </li>
+                <li>
+                  <div className={Style.icon}><PiFirstAidKitFill /></div>
+                  <p>Minor Procedures</p>
+                </li>
+                <li>
+                  <div className={Style.icon}><GiLungs /></div>
+                  <p>Pharmacy Support</p>
+                </li>
+                <li>
+                  <div className={Style.icon}><RiParentFill /></div>
+                  <p>Parent Counselling</p>
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <Support />
+    </div>
   )
 }
 
