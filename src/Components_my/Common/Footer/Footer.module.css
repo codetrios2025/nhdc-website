@@ -41,12 +41,3 @@ footer{margin-top: 20px;}
 .companyRights{margin-top: 0;}
 .companyRights .content{flex-direction: column;gap: 10px;}
 }
-@media only screen and (max-width: 767px) {
-.footerLink h4{margin-left: 0;}
-.footerLink .link ul, .addresInfo{padding-left: 0;border: none;}
-    .footerLink .link {
-        width: 50%;
-        margin-bottom: 20px;
-        flex: auto;
-    }
-}

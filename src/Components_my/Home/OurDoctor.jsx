@@ -20,13 +20,14 @@ const OurDoctor = () =>{
                   <img src={Doctor} alt="Doctor" />
                   <div className={Style.drExp}>
                     <div className={Style.icon}><FaStethoscope /></div>
-                    <p><strong>30+</strong> Years of Experience</p>
+                    <p><strong>25+</strong> Years of Experience</p>
                   </div>
                 </figure>
               </div>
               <div className={Style.drContent}>
                 <h2>Dr. Rajesh Jain</h2>
-                <p><span>MBBS</span> <span>D.C.H. (partially visible after MBBS)</span> <span>M.I.A.P. (Member of Indian Academy of Pediatrics)</span> <span>M.I.S.C.C.T.</span></p>
+                <p><span>MBBS</span> <span>D.C.H. (partially visible after MBBS)</span>
+                <span>A.A.C.</span> <span>M.I.A.P. (Member of Indian Academy of Pediatrics)</span> <span>M.I.S.C.C.M. , M.I.A.P. , M.N.N.F.</span></p>
                 <p>Child Specialist & Asthma Care Expert</p>
                 <p>Dr. Rajesh Jain is dedicated to providing comprehensive pediatric healthcare and asthma management services. With years of experience in child healthcare, he focuses on accurate diagnosis, compassionate treatment, and preventive care to ensure the healthy growth and development of every child.</p>
                 <ul>
