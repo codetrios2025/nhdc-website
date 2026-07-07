@@ -25,7 +25,7 @@ export default function Footer (){
               </a>
               <h5>Your Health, Our Priority</h5>
               <ul>
-                <li><a href="" title=""><TiSocialFacebook /></a></li>
+                {/* <li><a href="" title=""><TiSocialFacebook /></a></li> */}
                 <li><a href="" title=""><IoLogoInstagram /></a></li>
                 <li><a href="" title=""><BsYoutube /></a></li>
                 <li><a href="" title=""><FaWhatsapp /></a></li>
@@ -41,7 +41,6 @@ export default function Footer (){
                     <li><NavLink to="/" title="About Us">About Us</NavLink></li>
                     <li><NavLink to="/" title="Services">Services</NavLink></li>
                     <li><NavLink to="/" title="news">News</NavLink></li>
-                    <li><NavLink to="/" title="Health Tips">Health Tips</NavLink></li>
                     <li><NavLink to="/" title="Videos">Videos</NavLink></li>
                     <li><NavLink to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                 </ul>
