@@ -58,30 +58,15 @@ const BookingForm = ({close})=>{
             <span className={Style.icon}><MdAlternateEmail /></span>
             <input type="email" placeholder="Enter email address"  />
           </div>
-          <div className={Style.groupElem}>
+          {/* <div className={Style.groupElem}>
             <label>Appointment For <sub>*</sub></label>
             <span className={Style.icon}><PiCalendarCheckLight /></span>
             <select>
               <option>Select appointment type</option>
             </select>
-          </div>
+          </div> */}
         </div>
-        <div className={Style.formGroup}>
-          <div className={Style.groupElem}>
-            <label>Department / Service <sub>*</sub></label>
-            <span className={Style.icon}><SlOrganization /></span>
-            <select>
-              <option>Select department or service</option>
-            </select>
-          </div>
-          <div className={Style.groupElem}>
-            <label>Doctor (Optional) <sub>*</sub></label>
-            <span className={Style.icon}><FaUserDoctor /></span>
-            <select>
-              <option>Select preferred doctor</option>
-            </select>
-          </div>
-        </div>
+        
         <div className={Style.formGroup}>
           <div className={Style.groupElem}>
             <label>Preferred Date <sub>*</sub></label>
