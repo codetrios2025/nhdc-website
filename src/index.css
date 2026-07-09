@@ -168,6 +168,10 @@ li{list-style-type: none;}
 a{text-decoration: none;}
 button{margin: 0;padding: 0;border: none;}
 .flexCenter{display: flex;align-items: center;justify-content: center;}
+.watchVideo .rsme-embed{width: 100%!important;}
+.watchVideo .rsme-embed iframe{min-width: 100%!important;}
+.watchVideo .rsme-embed iframe .Footer{display: none!important;}
+
 
 
 @media only screen and (max-width: 1199px) {

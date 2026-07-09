@@ -46,7 +46,7 @@ const getYoutubeId = (url) => {
                 </div>
                 <a href="" className={Style.secondryBtn} aria-label="Call Hospital">View All Videos</a>
               </div>
-              <div className={Style.videoElem}>
+              <div className={'watchVideo ' + Style.videoElem}>
                 
                 {videos.map((item, index) =>{
                   // const videoId = getYoutubeId(item.url)
@@ -74,9 +74,9 @@ const getYoutubeId = (url) => {
                       <div >
                           <InstaVideo data={item.url}/>
                         </div>
-                       <div className={Style.content}>
+                       {/* <div className={Style.content}>
                         <h3>{item.title}</h3>
-                      </div> 
+                      </div>  */}
                     </div>
                   )
                 })}

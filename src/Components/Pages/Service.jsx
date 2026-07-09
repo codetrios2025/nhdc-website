@@ -54,7 +54,7 @@ const Services = () =>{
                       <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
                     </ul>
-                    <a href="" title="">Learn More</a>
+                    <a href="/service-detail" title="">Learn More</a>
                   </div>
                 </div>
                 <div className={Style.serviceBox}>
@@ -72,7 +72,7 @@ const Services = () =>{
                       <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
                     </ul>
-                    <a href="" title="">Learn More</a>
+                    <a href="/service-detail" title="">Learn More</a>
                   </div>
                 </div>
                 <div className={Style.serviceBox}>

@@ -27,7 +27,7 @@ const AboutUs = () =>{
       <div className={`${Style.whoWe} ${Style.commonSpace}`}>
         <Container>
           <Row>
-            <Col md={6}>
+            <Col md={6} className={Style.fullWid}>
               <div className={Style.content}>
                 <h2>Who We Are</h2>
                 <p>Established with the vision of delivering quality pediatric healthcare under one roof, Namokar Hospital & Diagnostic Centre has become a trusted name for child healthcare services in Deoli.</p>
@@ -40,7 +40,7 @@ const AboutUs = () =>{
                 </ul>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} className={Style.fullWid}>
               <div className={Style.highLights}>
                 <div className={Style.box}>
                   <div className={Style.icon}><FaPeopleGroup /></div>
@@ -81,23 +81,23 @@ const AboutUs = () =>{
             <Col>
               <div className={Style.missionContainer}>
                 <div className={Style.box}>
-                  <div className={Style.icon}><FaBullseye /></div>
+                  
                   <div className={Style.content}>
-                    <h3>Our Mission</h3>
+                    <h3><div className={Style.icon}><FaBullseye /></div> Our Mission</h3>
                     <p>To provide accessible, affordable, and high-quality healthcare with compassion, integrity, and clinical excellence while improving the health and well-being of every child and family we serve.</p>
                   </div>
                 </div>
                 <div className={Style.box}>
-                  <div className={Style.icon}><FaEye /></div>
+                  
                   <div className={Style.content}>
-                    <h3>Our Vision</h3>
+                    <h3><div className={Style.icon}><FaEye /></div> Our Vision</h3>
                     <p>To become the most trusted pediatric healthcare and diagnostic center by delivering world-class medical services through innovation, expertise, and patient-centered care.</p>
                   </div>
                 </div>
                 <div className={Style.box}>
-                  <div className={Style.icon}><IoDiamond /></div>
+                  
                   <div className={Style.content}>
-                    <h3>Our Values</h3>
+                    <h3><div className={Style.icon}><IoDiamond /></div>Our Values</h3>
                     <ul>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Compassion in Every Interaction</li>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Excellence in Clinical Care</li>
@@ -116,7 +116,7 @@ const AboutUs = () =>{
       <div className={`${Style.whyUs} ${Style.commonSpace}`}>
         <Container>
           <Row>
-            <Col md={7}>
+            <Col md={7} className={Style.fullWid}>
               <div className={Style.content}>
                 <h2>Why Choose Namokar Hospital?</h2>
                 {/* <p>We combine medical expertise, modern infrastructure, and compassionate care to deliver exceptional healthcare experiences for children and families.</p> */}
@@ -149,7 +149,7 @@ const AboutUs = () =>{
                 </ul>
               </div>
             </Col>
-            <Col md={5}>
+            <Col md={5} className={Style.fullWid}>
               <figure>
                 <img src={serviceImg01} alt="About Us" />
               </figure>
