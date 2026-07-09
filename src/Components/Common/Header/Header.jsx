@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link, NavLink  } from "react-router-dom";
 import Style from './Header.module.css';
@@ -14,7 +14,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
   const [booking, setBooking] = useState(false);
-
+   const [isScrolled, setIsScrolled] = useState(false);
   const bookingHandler = ()=>{
     setBooking(true)
   }
@@ -22,9 +22,23 @@ const Header = () => {
     setBooking(false)
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return(
     <>
-    <header role="banner">
+    <header role="banner" className={`header ${isScrolled ? Style.headerFix : ""}`}>
       <div className={Style.topHead}>
         <Container>
           <Row>

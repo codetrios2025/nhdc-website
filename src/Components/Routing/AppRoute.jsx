@@ -9,6 +9,7 @@ import HomeRoute from "../Home/HomeRoute";
 import AboutUs from "../Pages/About";
 import AboutNew from "../Pages/About-new";
 import Services from "../Pages/Service";
+import ServiceDetail from "../Pages/ServicesDetail";
 import BookAppointment from "../Booking/BookAppointmentPage";
 import ServiceNew from "../Pages/Service_my";
 const AppRoute = () =>{
@@ -22,6 +23,7 @@ const AppRoute = () =>{
           <Route path='/about' element={<AboutUs />} />
           <Route path='/about-new' element={<AboutNew />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/service-detail' element={<ServiceDetail />} />
           <Route path='/service-new' element={<ServiceNew />} />
           <Route path='/book-appointment' element={<BookAppointment />} />
         </Route>

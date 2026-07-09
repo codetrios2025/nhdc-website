@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import serviceImg01 from '../../assets/images/services_img01.webp';
-import serviceImg02 from '../../assets/images/services_img02.webp';
+import serviceImg01 from '../../assets/images/child-care-img.webp';
+import serviceImg02 from '../../assets/images/asthma.webp';
 // icon
 import { GiLungs } from "react-icons/gi";
 import {FaHeartbeat, FaCheckCircle} from "react-icons/fa";

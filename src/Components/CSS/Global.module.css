@@ -5,7 +5,7 @@
 .secondryBtn:hover{border-color: #16366a;}
 .commonSpace{padding: 30px 0;}
 /* Hero Banner CSS */
-.heroBanner {position: relative;overflow: hidden;}
+.heroBanner {position: relative;overflow: hidden;margin-top: 137px;}
 .bannerItem img {width: 100%;height: 650px;object-fit: cover;display: block;}
 .bannerContent {position: absolute;inset: 0;display: flex;align-items: center;color: #16366a;padding-left: 100px;max-width: 100%;
     width: 1020px;background: #f3f7fc;background: linear-gradient(272deg, rgb(243 247 252 / 0%) 20%, rgb(243 247 252 / 100%) 44%, rgba(243 247 252) 100%);
@@ -123,7 +123,7 @@
 .whyUs .content .icon{font-size: 30px;width: 40px;height: 40px;}
 .whyUs .content h5{text-align: center;font-size: var(--fs-md);line-height: 22px;margin: 10px 0;}
 .whyUs .content p{    text-align: left;line-height: 24px;margin: 0;}
-.whyUs figure img{width:100%;border-radius:10px}
+.whyUs figure img{width:100%;border-radius:10px;height: 400px;object-fit: cover;}
 
 /* Booking CSS */
 .appointmentForm{padding:80px 0;background:#f5f8fd;}
@@ -171,9 +171,10 @@
 .servicesPage{position: relative;}
 .mainServices{position: relative;}
 .mainServices .head{text-align: center;}
-.mainContainer{position: relative;display: flex;align-items: center;justify-content: center;gap: 10px;margin-top: 30px;}
+.mainContainer{position: relative;align-items: center;justify-content: center;gap: 30px;margin-top: 30px;display:grid;
+    grid-template-columns:repeat(3,1fr);}
 .mainContainer .serviceBox{flex: 1;padding: 0 10px 15px;border-radius: 10px;box-shadow:0 0px 9px rgba(16, 45, 92, 0.08), 0 0px 0px rgba(16, 45, 92, 0.05);border:1px solid rgba(15, 53, 109, 0.06);}
-.mainContainer .serviceBox img{width: 100%;border-radius: 10px;height: 150px;object-fit: cover;margin: -10px 0 0;}
+.mainContainer .serviceBox img{width: 100%;border-radius: 10px;height: 270px;object-fit: cover;margin: -10px 0 0;}
 .mainContainer .serviceBox .mainIcon{width: 80px;height: 80px;margin: -10px auto 0;padding: 10px;background: #fff;border-radius: 50%;position: relative;z-index: 1;}
 .mainContainer .serviceBox .mainIcon span{    width: 100%;height: 100%;font-size: 40px;display: flex;align-items: center;justify-content: center;background: #16366a;border-radius: 50%;color: #fff;}    
 .mainContainer .serviceBox h3{font-size: var(--fs-lg);margin: 20px 0;}    
@@ -210,6 +211,49 @@
 .medicalSec ul li p{font-weight: 500;}
 /* Services page CSS */
 
+.diagnosticsSec{position: relative;}
+.diagnosticsElem{position: relative;border-radius: 10px;overflow: hidden;display: flex;flex-wrap: wrap;height: 350px;background: #f2f6fc;}
+/* .diagnosticsElem::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #ebf0f8;
+    background: linear-gradient(272deg, rgb(235 240 248 / 0%) 0%, rgb(235 240 248) 35%, rgb(235 240 248) 100%);
+} */
+.diagnosticsElem .leftArea{position: relative;z-index: 9;}
+.diagnosticsElem .leftArea{width: 40%;padding: 30px;}
+.diagnosticsElem .rightArea{width: 60%;}
+.diagnosticsElem .rightArea img{width: 100%;height: 100%;object-fit: cover;}
+.diagnosticsElem .leftArea li{line-height: 30px;}
+.diagnosticsElem .leftArea li .icon{margin-right: 10px;}
+.diagnoServices.whyChoose p{text-align: center;}
+.diagnoServices.whyChoose .whyChooseContainer{background: #fff;    box-shadow: 0px 1px 11px 0px #00000024;}
+.diagnoServices.whyChoose .whyChooseElem{gap: 10px;margin-bottom: 30px;}
+.bookText{text-align: center;}
+.diagnoServices.whyChoose .whyChooseContainer .box{    border: 1px solid #e4e8ec!important;padding: 0 10px;border-radius: 10px;height: 210px;box-shadow: 0px 1px 5px 0px #00000024}
+.diagnoServices.whyChoose .whyChooseElem .box h4{    margin: 15px 0 7px;height: 34px;font-size: 14px;}
+.diagnoServices.whyChoose .whyChooseElem .box p {line-height: 22px;}
+.diagnoServices.whyChoose .whyChooseContainer .box:nth-child(2) .icon{color:#2e8de0}
+.diagnoServices.whyChoose .whyChooseContainer .box:nth-child(3) .icon{color:#06704c}
+.diagnoServices.whyChoose .whyChooseContainer .box:nth-child(4) .icon{color:#e30f11}
+.diagnoServices.whyChoose .whyChooseContainer .box:nth-child(5) .icon{color:#6f4eb4}
+.diagnoServices.whyChoose .whyChooseContainer .box:nth-child(6) .icon{color: #fe9f07}
+
+.aboutPage .drConainer{background: #ebf0f8;padding: 20px;}
+.aboutPage .drContent p{padding: 0;}
+.aboutPage .drConainer .drImg {
+    width: 40%;}
+.aboutPage .drContent{width: 60%;padding-left: 40px;}
+.aboutPage .drContent h4{font-weight: 600;font-size: var(--fs-xl);}
+.bookingOverLay{position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #0000005e;z-index: 9999;display: flex;align-items: center;justify-content: center;}
+.bookingOverLay .bookingPop{width: 800px;max-width: 90%;background: #fff;padding: 20px;overflow: auto;height: 90%;border-radius: 10px;}
+.bookingOverLay .formHead .closeBtn{display: block;}
+
+.servicesBanner{position: relative;}
+.servicesBanner img{width: 100%;}
 
 @media only screen and (max-width: 1400px) {
     .specialItem .content{padding-right: 150px;}

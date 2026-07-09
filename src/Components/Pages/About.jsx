@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
-import serviceImg01 from '../../assets/images/services_img01.webp';
+import serviceImg01 from '../../assets/images/namokar_img01.webp';
 import Support from '../Home/Support';
 import OurDoctor from './AboutOurDoctor';
 //icon

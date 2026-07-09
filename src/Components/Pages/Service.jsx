@@ -5,6 +5,12 @@ import BannerImg from '../../assets/images/hospital-slide.webp';
 import serviceImg01 from '../../assets/images/services_img01.webp';
 import Support from '../Home/Support';
 import OurDoctor from '../Home/OurDoctor';
+import childImg from "../../assets/images/child-care-img.webp";
+import asthmaImg from "../../assets/images/asthma.webp";
+import newbornImg from "../../assets/images/newbornImg.webp";
+import vaccineImg from "../../assets/images/vaccination-img.webp";
+import emergencyImg from "../../assets/images/namokar_img01.webp";
+import diagnosticImg from "../../assets/images/namokar_img02.webp";
 //icon
 import { FaCheckCircle, FaBullseye, FaEye, FaHandshake, FaAmbulance, FaHeartbeat, FaHeart } from "react-icons/fa";
 import { MdOutlineChildCare, MdMedicalServices, MdHealthAndSafety } from "react-icons/md";
@@ -29,15 +35,15 @@ const Services = () =>{
           <Row>
             <Col>
               <div className={Style.head}>
-                <h2>Our Services</h2>
-                <p>Specialized care, advanced technology, and compassionate treatment — all under one roof.</p>
+                <h2>Our Medical Services</h2>
+                <p>Comprehensive pediatric healthcare, asthma & allergy care, preventive medicine and advanced diagnostic services for children and families.</p>
               </div>
               <div className={Style.mainContainer}>
                 <div className={Style.serviceBox}>
                   <div className={Style.mainIcon}>
                     <span><MdOutlineChildCare /></span>
                   </div>
-                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <img src={childImg} alt="Namokar Hospital & Diagnostic Centre" />
                   <div className={Style.content}>
                     <h3>Child Specialist Care</h3>
                     <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
@@ -55,7 +61,7 @@ const Services = () =>{
                   <div className={Style.mainIcon}>
                     <span><GiLungs /></span>
                   </div>
-                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <img src={asthmaImg} alt="Namokar Hospital & Diagnostic Centre" />
                   <div className={Style.content}>
                     <h3>Asthma & Allergy Care</h3>
                     <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
@@ -73,9 +79,9 @@ const Services = () =>{
                   <div className={Style.mainIcon}>
                     <span><FaHeartbeat /></span>
                   </div>
-                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <img src={newbornImg} alt="Namokar Hospital & Diagnostic Centre" />
                   <div className={Style.content}>
-                    <h3>OPD Consultation</h3>
+                    <h3>Newborn & Infant Care</h3>
                     <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
                     <ul className={Style.featureList}>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
@@ -91,9 +97,9 @@ const Services = () =>{
                   <div className={Style.mainIcon}>
                     <span><MdMedicalServices /></span>
                   </div>
-                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <img src={vaccineImg} alt="Namokar Hospital & Diagnostic Centre" />
                   <div className={Style.content}>
-                    <h3>Diagnostics</h3>
+                    <h3>Vaccination & Immunization</h3>
                     <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
                     <ul className={Style.featureList}>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
@@ -109,9 +115,27 @@ const Services = () =>{
                   <div className={Style.mainIcon}>
                     <span><FaAmbulance /></span>
                   </div>
-                  <img src={serviceImg01} alt="Namokar Hospital & Diagnostic Centre" />
+                  <img src={emergencyImg} alt="Namokar Hospital & Diagnostic Centre" />
                   <div className={Style.content}>
-                    <h3>Emergency Care</h3>
+                    <h3>Emergency Pediatric Care</h3>
+                    <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
+                    <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Asthma & Allergy Treatment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> 24×7 Emergency Service</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Advanced Diagnostics</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
+                    </ul>
+                    <a href="" title="">Learn More</a>
+                  </div>
+                </div>
+                <div className={Style.serviceBox}>
+                  <div className={Style.mainIcon}>
+                    <span><FaAmbulance /></span>
+                  </div>
+                  <img src={diagnosticImg} alt="Namokar Hospital & Diagnostic Centre" />
+                  <div className={Style.content}>
+                    <h3>Advanced Diagnostic Services</h3>
                     <p>Comprehensive healthcare services designed for infants, children, and adolescents.</p>
                     <ul className={Style.featureList}>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Child Specialist Care</li>

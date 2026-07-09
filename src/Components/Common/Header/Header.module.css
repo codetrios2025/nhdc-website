@@ -1,4 +1,8 @@
-.topHead{position: relative;padding: 10px 0;background: #eef3fa;}
+header{position: fixed;top:0;left: 0;width: 100%;z-index: 999;background: #fff;}
+header.headerFix{box-shadow: -4px 1px 19px 1px rgba(0, 0, 0, .1);}
+header.headerFix .topHead{margin-top: -66px;}
+header *{transition:.4s;}
+.topHead{position: relative;padding: 10px 0;background: #eef3fa;margin: 0;}
 .logo{position: relative;}
 .logo img{width: 60px;}
 address ul{
