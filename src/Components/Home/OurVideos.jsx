@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-
+import InstaVideo from './InstaVideo'
 //icon
 import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
@@ -11,19 +11,19 @@ const OurVideos = () =>{
   const videos = [
   {
     title: "Child Vaccination Guide",
-    url: "https://www.youtube.com/watch?v=t9xnJRzy6hI",
+    url: "https://www.instagram.com/p/DaC-GBQJBuU/",
   },
   {
     title: "Asthma Symptoms & Prevention",
-    url: "https://www.youtube.com/watch?v=CdyvYAXFzsM",
+    url: "https://www.instagram.com/p/DZ1whPDJgD_/",
   },
   {
     title: "Seasonal Allergy Care Asthma Symptoms & Prevention",
-    url: "https://www.youtube.com/watch?v=cuIYCD67vW0",
+    url: "https://www.instagram.com/p/DVREIEZArN3/",
   },
   {
     title: "Newborn Care Tips",
-    url: "https://www.youtube.com/watch?v=OFfYB_edm0w",
+    url: "https://www.instagram.com/p/DZzde87pquI/",
   },
 ];
 // get youtube id
@@ -41,17 +41,18 @@ const getYoutubeId = (url) => {
             <div className={Style.videoContainer}>
               <div className={Style.videoHead}>
                 <div>
-                  <h2>Watch Our Videos on <span>YouTube</span></h2>
+                  <h2>Watch Our Videos </h2>
                   <p>Stay informed with expert medical guidance, child healthcare advice, and asthma awareness programs</p>
                 </div>
                 <a href="" className={Style.secondryBtn} aria-label="Call Hospital">View All Videos</a>
               </div>
               <div className={Style.videoElem}>
+                
                 {videos.map((item, index) =>{
-                  const videoId = getYoutubeId(item.url)
+                  // const videoId = getYoutubeId(item.url)
                   return(
-                    <div className={Style.videoItem} key={videoId}>
-                      <div className={Style.videoFrame}>
+                    <div className={Style.videoItem} key={index}>
+                      {/* <div className={Style.videoFrame}>
                         {activeVideo === videoId ? (
                           <iframe
                             src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
@@ -69,10 +70,13 @@ const getYoutubeId = (url) => {
                           <button onClick={() => setActiveVideo(videoId)} className={'flexCenter ' + Style.playBtn}><FaPlay /></button>
                           </>
                         )}
-                      </div>
-                      <div className={Style.content}>
+                      </div> */}
+                      <div >
+                          <InstaVideo data={item.url}/>
+                        </div>
+                       <div className={Style.content}>
                         <h3>{item.title}</h3>
-                      </div>
+                      </div> 
                     </div>
                   )
                 })}
