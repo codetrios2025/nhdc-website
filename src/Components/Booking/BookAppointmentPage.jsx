@@ -21,7 +21,7 @@ const BookAppointment = () => {
               <Row>
                 <Col>
                 <div className={Style.box}>
-                    <h1>Book an Appointment</h1>
+                    <h1>Contact Us</h1>
                     <p>Schedule your visit with our specialists. We're here to provide the best care for your child and family.</p>
                 </div>
                 </Col>
