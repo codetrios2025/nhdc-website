@@ -174,8 +174,13 @@
 .servicesPage{position: relative;}
 .mainServices{position: relative;}
 .mainServices .head{text-align: center;}
-.mainContainer{position: relative;align-items: center;justify-content: center;gap: 30px;margin-top: 30px;display:grid;
-    grid-template-columns:repeat(3,1fr);}
+.mainContainer{    position: relative;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);}
 .mainContainer .serviceBox{flex: 1;padding: 0 10px 15px;border-radius: 10px;box-shadow:0 0px 9px rgba(16, 45, 92, 0.08), 0 0px 0px rgba(16, 45, 92, 0.05);border:1px solid rgba(15, 53, 109, 0.06);}
 .mainContainer .serviceBox img{width: 100%;border-radius: 10px;height: 270px;object-fit: cover;margin: -10px 0 0;}
 .mainContainer .serviceBox .mainIcon{width: 80px;height: 80px;margin: -10px auto 0;padding: 10px;background: #fff;border-radius: 50%;position: relative;z-index: 1;}

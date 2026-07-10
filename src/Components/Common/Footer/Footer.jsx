@@ -69,7 +69,7 @@ export default function Footer (){
                   <div className={Style.address}>
                     <div className={Style.icon}><IoIosMail size="20" /></div>
                     <p>
-                      <a href="tel:9829143239">+91 98291 43239</a>, <a href="tel:6375637141">+91 63756 37141</a>
+                      <a href="tel:9057288286">+91 90572 88286 </a>, <a href="tel:9829143239">+91 98291 43239</a>
                     </p>                  
                   </div>
                   <div className={Style.address}>

@@ -18,8 +18,8 @@ const Support = () =>{
               <div className={'flexCenter ' + Style.call}>
                 <div className={Style.icon}><PiPhoneCallLight /></div>
                 <p>
-                  <a href="tel:">+91 98291 43239</a>
-                  <a href="tel:">+91 63756 37141 </a> 
+                  <a href="tel:9057288286">+91 90572 88286 </a> 
+                  <a href="tel:9829143239">+91 98291 43239</a>
                 </p>
               </div>
             </div>

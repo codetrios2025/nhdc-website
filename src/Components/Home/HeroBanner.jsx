@@ -78,7 +78,7 @@ const HeroBanner = () =>{
             <button onClick={bookingHandler} type="button" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
               <div className={Style.icon}><IoCalendarOutline /></div> Book Appointment
             </button>
-            <a href="tel:0000000000" className={'flexCenter ' + Style.secondryBtn} aria-label="Call Hospital">
+            <a href="tel:9057288286" className={'flexCenter ' + Style.secondryBtn} aria-label="Call Hospital">
               <div className={Style.icon}><IoCall /></div> Call Now
             </a>
           </div>
