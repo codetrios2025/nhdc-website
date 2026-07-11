@@ -56,13 +56,13 @@ const BookAppointment = () => {
                             <p>Accurate & quick results</p>
                           </div>
                         </div>
-                        <div className={Style.box}>
+                        {/* <div className={Style.box}>
                           <div className={Style.icon}><MdEmergency /></div>
                           <div className={Style.text}>
                             <h4>24×7 Emergency Care</h4>
                             <p>We are here anytime</p>
                           </div>
-                        </div>
+                        </div> */}
                         <div className={Style.box}>
                           <div className={Style.icon}><FaChild /></div>
                           <div className={Style.text}>
@@ -87,7 +87,7 @@ const BookAppointment = () => {
                         <div className={Style.areTime}>
                           <spam>Sunday:</spam> <span>9:00 AM – 1:00 PM</span>
                         </div>
-                        <h5>24×7 Emergency Services</h5>
+                        {/* <h5>24×7 Emergency Services</h5> */}
                       </div>
                     </div>
                   </Col> 

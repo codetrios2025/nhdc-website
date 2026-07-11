@@ -73,11 +73,11 @@ const BookingForm = ({close})=>{
             <span className={Style.icon}><HiCalendarDateRange /></span>
             <input type="date" placeholder="Select preferred date"  />
           </div>
-          <div className={Style.groupElem}>
+          {/* <div className={Style.groupElem}>
             <label>Preferred Time <sub>*</sub></label>
             <span className={Style.icon}><IoMdTime /></span>
             <input type="time" placeholder="Enter age"  />
-          </div>
+          </div> */}
         </div>
         <div className={Style.formGroup}>
           <div className={Style.groupElem}>
@@ -90,7 +90,7 @@ const BookingForm = ({close})=>{
           <div className={Style.groupElem}>
             <label>Reason for Visit</label>
             <span className={Style.icon}><MdOutlineSpeakerNotes /></span>
-            <textarea placeholder="Enter your complete address"></textarea>
+            <textarea placeholder="Enter your reason for visit"></textarea>
           </div>
         </div>
         <div className={Style.nots}>

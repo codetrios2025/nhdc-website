@@ -8,7 +8,7 @@ import OurDoctor from '../Home/OurDoctor';
 import childImg from "../../assets/images/child-care-img.webp";
 import asthmaImg from "../../assets/images/asthma.webp";
 import newbornImg from "../../assets/images/newbornImg.webp";
-import vaccineImg from "../../assets/images/vaccination-img.webp";
+import vaccineImg from "../../assets/images/3.png";
 import emergencyImg from "../../assets/images/namokar_img01.webp";
 import diagnosticImg from "../../assets/images/namokar_img02.webp";
 //icon
@@ -31,6 +31,7 @@ const services = [
     title: "Child Specialist Care",
     image: childImg,
     icon: MdOutlineChildCare,
+    link: "/service-detail",
     text:
       "Comprehensive healthcare for newborns, infants, children and adolescents with a focus on prevention, diagnosis and treatment.",
     items: [
@@ -39,6 +40,8 @@ const services = [
       "Nutrition Guidance",
       "Growth & Development Assessment",
       "Preventive Healthcare",
+      "Newborn Examination",
+      "Parent Counselling",
     ],
   },
 
@@ -46,6 +49,7 @@ const services = [
     title: "Asthma & Allergy Clinic",
     image: asthmaImg,
     icon: GiLungs,
+     link: "/service-detail",
     text:
       "Personalized care for children with asthma, allergies and respiratory conditions using modern diagnostic techniques.",
     items: [
@@ -57,24 +61,26 @@ const services = [
     ],
   },
 
-  {
-    title: "Newborn & Infant Care",
-    image: newbornImg,
-    icon: FaHeartbeat,
-    text:
-      "Specialized care for newborns and infants with regular health assessments and parental guidance.",
-    items: [
-      "Newborn Examination",
-      "Breastfeeding Guidance",
-      "Growth Monitoring",
-      "Parent Counselling",
-    ],
-  },
+  // {
+  //   title: "Newborn & Infant Care",
+  //   image: newbornImg,
+  //   icon: FaHeartbeat,
+  //  link: "/service-detail",
+  //   text:
+  //     "Specialized care for newborns and infants with regular health assessments and parental guidance.",
+  //   items: [
+  //     "Newborn Examination",
+  //     "Breastfeeding Guidance",
+  //     "Growth Monitoring",
+  //     "Parent Counselling",
+  //   ],
+  // },
 
   {
     title: "Vaccination & Immunization",
     image: vaccineImg,
     icon: MdMedicalServices,
+     link: "/service-detail",
     text:
       "Complete vaccination services following the National Immunization Schedule.",
     items: [
@@ -84,23 +90,24 @@ const services = [
     ],
   },
 
-  {
-    title: "Emergency Pediatric Care",
-    image: emergencyImg,
-    icon: FaAmbulance,
-    text:
-      "Prompt and compassionate emergency medical care for infants and children.",
-    items: [
-      "Emergency Consultation",
-      "Rapid Assessment",
-      "Referral Support",
-    ],
-  },
+  // {
+  //   title: "Emergency Pediatric Care",
+  //   image: emergencyImg,
+  //   icon: FaAmbulance,
+  //   text:
+  //     "Prompt and compassionate emergency medical care for infants and children.",
+  //   items: [
+  //     "Emergency Consultation",
+  //     "Rapid Assessment",
+  //     "Referral Support",
+  //   ],
+  // },
 
   {
     title: "Advanced Diagnostic Services",
     image: diagnosticImg,
     icon: FaAmbulance,
+     link: "/service-detail",
     text:
       "Advanced diagnostic facilities available under one roof for accurate and timely diagnosis.",
     items: [

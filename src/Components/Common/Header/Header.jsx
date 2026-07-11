@@ -46,19 +46,23 @@ const Header = () => {
               <address>
                 <ul>
                   <li>
-                    <a href="mailto:namokarhospitaldeoli.com"  aria-label="Email Namokar Hospital">
-                      <div className={Style.icon}><IoIosMail /></div> namokarhospitaldeoli.com</a>     
+                    <a href="mailto:nhdcdeoli@gmail.com"  aria-label="Email Namokar Hospital">
+                      <div className={Style.icon}><IoIosMail /></div>nhdcdeoli@gmail.com</a>     
                   </li>
                   <li>
                     <a href="tel:9057288286" >
                       <div className={Style.icon}><FaHeadset /></div>
-                      <p><span>24*7 Emergency</span> +91 90572 88286</p>
+                      <p> +91 90572 88286</p>
                     </a>
+                  </li>
+                   <li>
+                    <div className={Style.icon}><FiClock /></div><p>Time Slot: 9:00 AM – 8:00 PM</p>
                   </li>
                   <li>
                     <button onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
                       <span className={Style.icon}><IoCalendarOutline /></span> Book Appointment</button>
                   </li>
+                 
                 </ul>
               </address>
             </Col>

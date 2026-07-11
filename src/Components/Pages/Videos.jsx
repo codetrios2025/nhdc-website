@@ -4,6 +4,7 @@ import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
 import InstaVideo from "../Home/InstaVideo";
 //icon
+import OurVideos from "./OurVideos";
 import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
 
@@ -23,6 +24,7 @@ const NHDCVideos = () =>{
             <div className={Style.NHDCVideoSec}>
               <h2>Our Videos</h2>
             </div>
+            <OurVideos/>
           </Col>
         </Row>
       </Container>
