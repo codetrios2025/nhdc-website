@@ -443,6 +443,7 @@
 .diagnosticsElem .leftArea, .overViewCOntainer{padding: 15px;}
 .overViewCOntainer{padding: 25px 15px;}
 .overViewCOntainer h2{margin-bottom: 20px;}
+.specialItem .content{padding: 15px;}
 }
 
 @media only screen and (max-width: 580px) {
