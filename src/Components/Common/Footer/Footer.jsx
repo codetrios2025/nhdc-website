@@ -37,11 +37,10 @@ export default function Footer (){
               <div className={Style.link}>
                 <h4>Quick Link</h4>
                 <ul>
-                  <li><NavLink to="/" title="Home">Home</NavLink></li>
-                    <li><NavLink to="/" title="About Us">About Us</NavLink></li>
-                    <li><NavLink to="/" title="Services">Services</NavLink></li>
-                    <li><NavLink to="/" title="news">News</NavLink></li>
-                    <li><NavLink to="/" title="Videos">Videos</NavLink></li>
+                  <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
+                    <li><NavLink to="/services" title="Services">Services</NavLink></li>
+                    {/* <li><NavLink to="/" title="news">News</NavLink></li> */}
+                    <li><NavLink to="/videos" title="Videos">Videos</NavLink></li>
                     <li><NavLink to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                 </ul>
               </div>
@@ -64,7 +63,7 @@ export default function Footer (){
                   </div>
                   <div className={Style.address}>
                     <div className={Style.icon}><BsFillTelephoneFill /></div>
-                    <a href="mailto:namokarhospitaldeoli@gmail.com">namokarhospitaldeoli@gmail.com</a>
+                    <a href="mailto:nhdcdeoli@gmail.com">nhdcdeoli@gmail.com</a>
                   </div>
                   <div className={Style.address}>
                     <div className={Style.icon}><IoIosMail size="20" /></div>
@@ -74,7 +73,8 @@ export default function Footer (){
                   </div>
                   <div className={Style.address}>
                     <div className={Style.icon}><FiClock /></div>
-                    <p>24x7 Emergency Services</p>
+                   <p>Monday - Saturday: 9:00 AM – 8:00 PM</p>
+                    <p>Sunday: 9:00 AM – 1:00 PM</p>
                   </div>
                 </div>
               </div>

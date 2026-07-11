@@ -20,30 +20,7 @@ const Diagnostics = () =>{
   }
   return(
     <>
-    <section className={`${Style.diagnosticsSec} ${Style.commonSpace}`}>
-      <Container>
-        <Row>
-          <Col>
-            <div className={Style.diagnosticsElem}>
-              <div className={Style.leftArea}>
-                <h2>Allergy Care & Diagnostics</h2>
-                <p>Accurate allergy testing and personalized treatment for better and healthier living.</p>
-                <ul className={Style.featureList}>
-                  <li><span className={Style.icon}><FaCheckCircle /></span> Skin Prick Test (SPT)</li>
-                  <li><span className={Style.icon}><FaCheckCircle /></span> ImmunoCAP Allergy Blood Test</li>
-                  <li><span className={Style.icon}><FaCheckCircle /></span> Food & Drug Allergy Testing</li>
-                  <li><span className={Style.icon}><FaCheckCircle /></span> Dust, Pollen & Pet Allergy Assessment</li>
-                  <li><span className={Style.icon}><FaCheckCircle /></span> Allergy Consultation & Management</li>
-                </ul>
-              </div>
-              <div className={Style.rightArea}>
-                <img src={serviceImg01} />
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+   
     <section className={`${Style.whyChoose} ${Style.diagnoServices} ${Style.commonSpace}`}>
       <Container>
         <Row>
@@ -83,11 +60,11 @@ const Diagnostics = () =>{
                   <p>Safe imaging test to view internal organs, tissues and blood flow.</p>
                 </div>
               </div>
-              <div className={'flexCenter ' + Style.bookText}>
+              {/* <div className={'flexCenter ' + Style.bookText}>
                 <button onClick={bookingHandler} type="button" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
                   <div className={Style.icon}><IoCalendarOutline /></div> Book Diagnostic Test
                 </button>
-              </div>
+              </div> */}
             </div>
           </Col>
         </Row>

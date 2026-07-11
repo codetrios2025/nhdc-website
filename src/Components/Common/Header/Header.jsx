@@ -46,19 +46,23 @@ const Header = () => {
               <address>
                 <ul>
                   <li>
-                    <a href="mailto:namokarhospitaldeoli.com"  aria-label="Email Namokar Hospital">
-                      <div className={Style.icon}><IoIosMail /></div> namokarhospitaldeoli.com</a>     
+                    <a href="mailto:nhdcdeoli@gmail.com"  aria-label="Email Namokar Hospital">
+                      <div className={Style.icon}><IoIosMail /></div>nhdcdeoli@gmail.com</a>     
                   </li>
                   <li>
                     <a href="tel:9057288286" >
                       <div className={Style.icon}><FaHeadset /></div>
-                      <p><span>24*7 Emergency</span> +91 90572 88286</p>
+                      <p> +91 90572 88286</p>
                     </a>
+                  </li>
+                   <li>
+                    <span>Time Slot: 9:00 AM – 8:00 PM</span>
                   </li>
                   <li>
                     <button onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
                       <span className={Style.icon}><IoCalendarOutline /></span> Book Appointment</button>
                   </li>
+                 
                 </ul>
               </address>
             </Col>
@@ -83,7 +87,7 @@ const Header = () => {
                     <li><NavLink onClick={closeMenu} to="/" title="Home">Home</NavLink></li>
                     <li><NavLink onClick={closeMenu} to="/about" title="About Us">About Us</NavLink></li>
                     <li><NavLink onClick={closeMenu} to="/services" title="Services">Services</NavLink></li>
-                    <li><NavLink onClick={closeMenu} to="/news" title="news">News</NavLink></li>
+                    {/* <li><NavLink onClick={closeMenu} to="/news" title="news">News</NavLink></li> */}
                     <li><NavLink onClick={closeMenu} to="/videos" title="Videos">Videos</NavLink></li>
                     <li><NavLink onClick={closeMenu} to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                   </ul>

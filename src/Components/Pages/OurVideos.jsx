@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import InstaVideo from './InstaVideo'
+import InstaVideo from '../Home/InstaVideo'
 //icon
 import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
@@ -39,13 +39,7 @@ const getYoutubeId = (url) => {
         <Row>
           <Col>
             <div className={Style.videoContainer}>
-              <div className={Style.videoHead}>
-                <div>
-                  <h2>Watch Our Videos </h2>
-                  <p>Stay informed with expert medical guidance, child healthcare advice, and asthma awareness programs</p>
-                </div>
-                <a href="/" className={Style.secondryBtn} aria-label="Call Hospital">View All Videos</a>
-              </div>
+              
               <div className={'watchVideo ' + Style.videoElem}>
                 
                 {videos.map((item, index) =>{
