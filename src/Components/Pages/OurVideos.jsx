@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
 import InstaVideo from '../Home/InstaVideo'
+import Support from '../Home/Support';
 //icon
 import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
@@ -39,9 +40,7 @@ const getYoutubeId = (url) => {
         <Row>
           <Col>
             <div className={Style.videoContainer}>
-              
               <div className={'watchVideo ' + Style.videoElem}>
-                
                 {videos.map((item, index) =>{
                   // const videoId = getYoutubeId(item.url)
                   return(
@@ -79,6 +78,7 @@ const getYoutubeId = (url) => {
           </Col>
         </Row>
       </Container>
+      <Support />
     </div>
   )
 }

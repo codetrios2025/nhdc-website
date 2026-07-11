@@ -74,9 +74,9 @@ const BookAppointment = () => {
                       <div className={Style.helpUs}>
                         <h3>Need Immediate Help?</h3>
                         <p>Our emergency team is available 24×7</p>
-                        <a href="tel:+919829143239" className={Style.callBtn}>
+                        <a href="tel:+919057288286" className={Style.callBtn}>
                           <div className={Style.icon}><LiaPhoneSolid /></div>
-                          <p>+91 98291 43239 <span>24×7 Emergency Services</span></p>
+                          <p>+91 90572 88286 <span>24×7 Emergency Services</span></p>
                         </a>
                       </div>
                       <div className={Style.workingUs}>

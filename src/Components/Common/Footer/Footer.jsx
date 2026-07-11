@@ -37,7 +37,8 @@ export default function Footer (){
               <div className={Style.link}>
                 <h4>Quick Link</h4>
                 <ul>
-                  <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
+                    <li><NavLink to="/" title="Home">Home</NavLink></li>
+                    <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
                     <li><NavLink to="/services" title="Services">Services</NavLink></li>
                     {/* <li><NavLink to="/" title="news">News</NavLink></li> */}
                     <li><NavLink to="/videos" title="Videos">Videos</NavLink></li>
@@ -71,10 +72,9 @@ export default function Footer (){
                       <a href="tel:9057288286">+91 90572 88286 </a>, <a href="tel:9829143239">+91 98291 43239</a>
                     </p>                  
                   </div>
-                  <div className={Style.address}>
+                  <div className={`${Style.address} ${Style.timeSlot}`}>
                     <div className={Style.icon}><FiClock /></div>
-                   <p>Monday - Saturday: 9:00 AM – 8:00 PM</p>
-                    <p>Sunday: 9:00 AM – 1:00 PM</p>
+                    <p><span><strong>Monday - Saturday:</strong> 9:00 AM – 8:00 PM</span> <span><strong>Sunday:</strong> 9:00 AM – 1:00 PM</span></p>
                   </div>
                 </div>
               </div>

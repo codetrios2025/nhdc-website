@@ -20,6 +20,7 @@
     "react-multi-carousel": "^2.8.6",
     "react-router-dom": "^7.18.0",
     "react-social-media-embed": "^2.5.18",
+    "react-tooltip": "^6.0.8",
     "swiper": "^14.0.0"
   },
   "devDependencies": {

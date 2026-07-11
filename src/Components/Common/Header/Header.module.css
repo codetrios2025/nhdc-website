@@ -11,10 +11,12 @@ address ul{
   justify-content: flex-end;
 }
 address li{
-  margin-left: 40px;
+  margin-left: 20px;
+  display: flex;align-items: center;
 }
-address li a{
+address li a, address li p{
   display: flex;
+  margin: 0;
   align-items: center;
   font-size: var(--fs-sm);
   color: #16366a;
@@ -28,7 +30,7 @@ address li a p span{
   font-size: 10px;
   font-weight: 500;
 }
-address li a .icon{
+address li .icon{
   width: 30px;
   height: 30px;
   /* background: #22335c; */
@@ -39,7 +41,6 @@ address li a .icon{
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  color: #16366a;
 }
 /* address li a:hover{
   color:#163B7A
@@ -59,7 +60,9 @@ address li a:hover .icon{
   font-weight: 600;
   color: #fff;
 }
+.bookBtn p{color: #fff;}
 .bookBtn .icon{margin-right: 10px;font-size: 20px;position: relative;top: -2px;}
+.bookBtn:hover p{color: #000;}
 .bookBtn:hover{
   background: #FFD11A;
   color: #000;
@@ -117,12 +120,28 @@ header.headerFix .topHead {
 }
 
 @media only screen and (max-width: 767px) {
+  header.headerFix nav ul li a{padding: 15px 20px;}
 header.headerFix .topHead {
-    margin-top: -54px;
+    margin-top: -60px;
 }  
-  .topHead ul li:first-child{display: none;}
-  .bookBtn {padding: 5px 8px;font-size: 11px;}
-  .bookBtn .icon{font-size: 14px}
+    address li {
+        margin-left: 10px;
+    }
+  .mobNone{display: none;}
+      address li .icon, address li a .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 5px;
+        border-radius: 50%;
+        color: #22335c;
+        border: 1px solid #22335c;
+        margin: 0;
+    }
+    .bookBtn{padding: 0;margin: 0;background: transparent;}
+    .bookBtn:hover{background: transparent;color: #22335c;}
+  /* .bookBtn {padding: 5px 8px;font-size: 11px;}
+  .bookBtn .icon{font-size: 14px} */
 .menuBtn {
         display: block;
         z-index: 1001;

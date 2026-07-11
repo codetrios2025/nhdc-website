@@ -10,6 +10,7 @@ import { FaHeadset, FaBars, FaTimes } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 import BookingForm from "../../Booking/BookingForm";
+import { FiClock } from "react-icons/fi";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
@@ -46,21 +47,21 @@ const Header = () => {
               <address>
                 <ul>
                   <li>
-                    <a href="mailto:nhdcdeoli@gmail.com"  aria-label="Email Namokar Hospital">
-                      <div className={Style.icon}><IoIosMail /></div>nhdcdeoli@gmail.com</a>     
+                    <a data-tooltip-id="tooltip" data-tooltip-content="nhdcdeoli@gmail.com" href="mailto:nhdcdeoli@gmail.com"  aria-label="Email Namokar Hospital">
+                      <div className={Style.icon}><IoIosMail /></div><p className={Style.mobNone}>nhdcdeoli@gmail.com</p></a>     
                   </li>
                   <li>
-                    <a href="tel:9057288286" >
+                    <a data-tooltip-id="tooltip" data-tooltip-content="9057288286" href="tel:9057288286" >
                       <div className={Style.icon}><FaHeadset /></div>
-                      <p> +91 90572 88286</p>
+                      <p className={Style.mobNone}>+91 90572 88286</p>
                     </a>
                   </li>
-                   <li>
-                    <div className={Style.icon}><FiClock /></div><p>Time Slot: 9:00 AM – 8:00 PM</p>
+                   <li data-tooltip-id="tooltip" data-tooltip-content="Time Slot: 9:00 AM – 8:00 PM">
+                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}>Time Slot: 9:00 AM – 8:00 PM</p>
                   </li>
                   <li>
-                    <button onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
-                      <span className={Style.icon}><IoCalendarOutline /></span> Book Appointment</button>
+                    <button data-tooltip-id="tooltip" data-tooltip-content="Book Appointment" onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
+                      <span className={Style.icon}><IoCalendarOutline /></span> <p className={Style.mobNone}>Book Appointment</p></button>
                   </li>
                  
                 </ul>
@@ -75,9 +76,9 @@ const Header = () => {
             <Col>
               <div className={'flexCenter ' + Style.navBar}>
                 <div className={Style.logo}>
-                  <a href="/" aria-label="Namokar Hospital Home">
+                  <Link to="/" aria-label="Namokar Hospital Home">
                     <img src={Logo} alt="Namokar Hospital Home" />
-                  </a>
+                  </Link>
                 </div>
                  <button className={Style.menuBtn} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
                   {menuOpen ? <IoClose /> : <CiMenuBurger />}

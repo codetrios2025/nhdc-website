@@ -19,7 +19,7 @@ import {
   GiBabyFace,
   GiMedicines,
 } from "react-icons/gi";
-import { FaSyringe, FaUserDoctor  } from "react-icons/fa6";
+import { FaSyringe, FaUserDoctor, FaMicroscope   } from "react-icons/fa6";
 import { PiFirstAidKitFill } from "react-icons/pi";
 import { RiParentFill, RiHospitalLine } from "react-icons/ri";
 import { BsClockHistory } from "react-icons/bs";
@@ -79,7 +79,7 @@ const services = [
   {
     title: "Vaccination & Immunization",
     image: vaccineImg,
-    icon: MdMedicalServices,
+    icon: FaSyringe,
      link: "/service-detail",
     text:
       "Complete vaccination services following the National Immunization Schedule.",
@@ -106,7 +106,7 @@ const services = [
   {
     title: "Advanced Diagnostic Services",
     image: diagnosticImg,
-    icon: FaAmbulance,
+    icon: FaMicroscope ,
      link: "/service-detail",
     text:
       "Advanced diagnostic facilities available under one roof for accurate and timely diagnosis.",
