@@ -40,7 +40,7 @@ export default function Footer (){
                   <li><NavLink to="/" title="Home">Home</NavLink></li>
                     <li><NavLink to="/" title="About Us">About Us</NavLink></li>
                     <li><NavLink to="/" title="Services">Services</NavLink></li>
-                    <li><NavLink to="/" title="news">News</NavLink></li>
+                    {/* <li><NavLink to="/" title="news">News</NavLink></li> */}
                     <li><NavLink to="/" title="Videos">Videos</NavLink></li>
                     <li><NavLink to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                 </ul>
