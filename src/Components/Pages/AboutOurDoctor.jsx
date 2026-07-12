@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import Doctor from '../../assets/images/dr.rakesh.webp';
+import Doctor from '../../assets/images/drrajesh.png';
 import { GoArrowRight } from "react-icons/go";
 import { FaStethoscope, FaUserMd, FaSyringe, FaChild, FaHeartbeat } from "react-icons/fa";
 import { GiLungs } from "react-icons/gi";
@@ -17,10 +17,10 @@ const OurDoctor = () =>{
               <div className={Style.drImg}>
                 <figure>
                   <img src={Doctor} alt="Doctor" />
-                  <div className={Style.drExp}>
+                  {/* <div className={Style.drExp}>
                     <div className={Style.icon}><FaStethoscope /></div>
                     <p><strong>25+</strong> Years of Experience</p>
-                  </div>
+                  </div> */}
                 </figure>
               </div>
              <div className={Style.drContent}>

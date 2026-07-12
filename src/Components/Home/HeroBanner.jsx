@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CarouselImport from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
+import BannerImg01 from '../../assets/images/banner_image_1.webp';
 //icon
 import { IoCalendarOutline } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { FaCheckCircle } from "react-icons/fa";
-
+import BookingForm from "../Booking/BookingForm";
 
 const Carousel =
   CarouselImport.default ??
   CarouselImport;
+
 const HeroBanner = () =>{
-  console.log("Carousel =", Carousel);
-console.log("typeof =", typeof Carousel);
+  const [booking, setBooking] = useState(false);
+    const bookingHandler = ()=>{
+      setBooking(true)
+    }
+    const closeBooking = ()=>{
+      setBooking(false)
+    }
   const heroSlider = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },items: 1,
@@ -49,7 +56,7 @@ console.log("typeof =", typeof Carousel);
         </figure>
         <figure className={Style.bannerItem}>
           <img
-            src={BannerImg}
+            src={BannerImg01}
             alt="Expert pediatric healthcare services at Namokar Hospital"
             width="1920"
             height="850"
@@ -68,15 +75,22 @@ console.log("typeof =", typeof Carousel);
             <li><span className={Style.icon}><FaCheckCircle /></span> Personalized Patient Care</li>
           </ul>
           <div className={Style.bannerBtn}>
-            <button type="button" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
+            <button onClick={bookingHandler} type="button" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
               <div className={Style.icon}><IoCalendarOutline /></div> Book Appointment
             </button>
-            <a href="tel:0000000000" className={'flexCenter ' + Style.secondryBtn} aria-label="Call Hospital">
+            <a href="tel:9057288286" className={'flexCenter ' + Style.secondryBtn} aria-label="Call Hospital">
               <div className={Style.icon}><IoCall /></div> Call Now
             </a>
           </div>
         </div>
       </div>
+      {booking &&
+        <div className={Style.bookingOverLay}>
+          <div className={Style.bookingPop}>
+            <BookingForm close={closeBooking} />
+          </div>
+        </div>
+      }
     </div>
   )
 }

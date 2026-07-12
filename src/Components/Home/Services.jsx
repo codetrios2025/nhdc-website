@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import serviceImg01 from '../../assets/images/services_img01.webp';
-import serviceImg02 from '../../assets/images/services_img02.webp';
+import serviceImg01 from '../../assets/images/child-care-img.webp';
+import serviceImg03 from '../../assets/images/services_img03.png';
+import serviceImg02 from '../../assets/images/asthma.webp';
+import serviceImg04 from '../../assets/images/services_img04.png';
 // icon
 import { GiLungs } from "react-icons/gi";
 import {FaHeartbeat, FaCheckCircle} from "react-icons/fa";
@@ -117,6 +119,62 @@ const Services = () =>{
                         <span className={Style.icon}><FaCheckCircle /></span>Breathing Disorder Management
                       </li>
                       <li>
+                        <span className={Style.icon}><FaCheckCircle /></span>Follow-up Care Programs
+                      </li>
+                    </ul>
+                  </div>
+                </article >
+              </div>
+            </Col>
+          </Row>
+           <Row>
+            <Col>
+              <div className={Style.specialContainer}>
+                <article  className={Style.specialItem}>
+                  <figure>
+                    <img 
+                      src={serviceImg03}   
+                      alt="Pediatric specialist examining a child at Namokar Hospital"
+                      width="650"
+                      height="700"
+                      loading="lazy"
+                      decoding="async" 
+                    />
+                  </figure>
+                  <div className={Style.content}>
+                   <h2>Allergy Care & <span>Diagnostics</span> </h2>
+                   <p>Accurate allergy testing and personalized treatment for better and healthier living.</p>
+                     <ul className={Style.featureList}>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Skin Prick Test (SPT)</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> ImmunoCAP Allergy Blood Test</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Food & Drug Allergy Testing</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Dust, Pollen & Pet Allergy Assessment</li>
+                      <li><span className={Style.icon}><FaCheckCircle /></span> Allergy Consultation & Management</li>
+                    </ul>
+                  </div>
+                </article >
+                <article  className={Style.specialItem}>
+                  <figure>
+                    <img 
+                      src={serviceImg04}   
+                      alt="Pediatric specialist examining a child at Namokar Hospital"
+                      width="650"
+                      height="700"
+                      loading="lazy"
+                      decoding="async" 
+                    />
+                  </figure>
+                  <div className={Style.content}>
+                    <h2>Vaccination  & <span>Immunization</span></h2>
+                    <p>Complete vaccination services following the National Immunization Schedule.</p>
+                    <ul>
+                      <li>
+                        <span className={Style.icon}><FaCheckCircle /></span>Routine Vaccination
+                      </li>
+                      <li>
+                        <span className={Style.icon}><FaCheckCircle /></span>Vaccination Reminder
+                      </li>
+                       <li>
                         <span className={Style.icon}><FaCheckCircle /></span>Follow-up Care Programs
                       </li>
                     </ul>

@@ -6,8 +6,10 @@ footer{margin-top: 20px;}
 .info ul li{margin-right: 0;}
 .info ul li a{color: #16366a;font-size: var(--fs-xl);}
 
-.footerLink{display: flex;padding: 0 0;}
-.footerLink .link{flex: 1;}
+.footerLink{display: flex;padding: 0 0;flex-wrap: wrap;}
+.footerLink .link:first-child{width: 25%;}
+.footerLink .link{width: 30%;}
+.footerLink .link:last-child{width: 45%;}
 .footerLink .link ul, .addresInfo{border-left: 1px solid #e7e7e7;padding-left: 30px;height: 90%;padding-top: 10px;}
 .footerLink h4{font-weight: 700;font-size: var(--fs-md);color: #16366a;margin-left: 30px;}
 .footerLink ul li{margin-bottom: 15px;}
@@ -23,15 +25,17 @@ footer{margin-top: 20px;}
 .companyRights .content{display: flex;align-items: center;justify-content: space-between;}
 .companyRights .content p, .companyRights .content p a{margin: 0;color: #fff;display: flex;align-items: center;}
 .companyRights .content p img{width:100px}
-
+.timeSlot p{display: flex;flex-direction: column;}
+.timeSlot p strong{font-weight: 600;}
 @media only screen and (max-width: 1400px) {
   .footerLink h4{margin-left: 20px;}  
-    .footerLink .link ul, .addresInfo{padding-left: 20px;}
-.footerLink ul li {
-    margin-bottom: 10px;
-}  
+.footerLink .link ul, .addresInfo{padding-left: 20px;}
+.footerLink ul li {margin-bottom: 10px;}  
 .footerLink ul li a{font-size: 13px;}  
 .link .address p, .link .address a{line-height: 20px;font-size: 13px;}  
+.footerLink .link:first-child{width: 20%;}
+.footerLink .link{width: 30%;}
+.footerLink .link:last-child{width: 50%;}
 }
 
 @media only screen and (max-width: 991px) {
@@ -40,6 +44,9 @@ footer{margin-top: 20px;}
 .footerLink .link{margin-bottom: 20px;}
 .companyRights{margin-top: 0;}
 .companyRights .content{flex-direction: column;gap: 10px;}
+.footerLink .link:first-child{width: 50%;}
+.footerLink .link{width: 50%;}
+.footerLink .link:last-child{width: 100%;}
 }
 @media only screen and (max-width: 767px) {
 .footerLink h4{margin-left: 0;}
@@ -49,4 +56,7 @@ footer{margin-top: 20px;}
         margin-bottom: 20px;
         flex: auto;
     }
+.link .address {
+    margin-bottom: 15px;
+}    
 }

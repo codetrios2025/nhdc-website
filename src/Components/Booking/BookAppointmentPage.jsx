@@ -21,7 +21,7 @@ const BookAppointment = () => {
               <Row>
                 <Col>
                 <div className={Style.box}>
-                    <h1>Book an Appointment</h1>
+                    <h1>Contact Us</h1>
                     <p>Schedule your visit with our specialists. We're here to provide the best care for your child and family.</p>
                 </div>
                 </Col>
@@ -56,13 +56,13 @@ const BookAppointment = () => {
                             <p>Accurate & quick results</p>
                           </div>
                         </div>
-                        <div className={Style.box}>
+                        {/* <div className={Style.box}>
                           <div className={Style.icon}><MdEmergency /></div>
                           <div className={Style.text}>
                             <h4>24×7 Emergency Care</h4>
                             <p>We are here anytime</p>
                           </div>
-                        </div>
+                        </div> */}
                         <div className={Style.box}>
                           <div className={Style.icon}><FaChild /></div>
                           <div className={Style.text}>
@@ -74,9 +74,9 @@ const BookAppointment = () => {
                       <div className={Style.helpUs}>
                         <h3>Need Immediate Help?</h3>
                         <p>Our emergency team is available 24×7</p>
-                        <a href="tel:+919829143239" className={Style.callBtn}>
+                        <a href="tel:+919057288286" className={Style.callBtn}>
                           <div className={Style.icon}><LiaPhoneSolid /></div>
-                          <p>+91 98291 43239 <span>24×7 Emergency Services</span></p>
+                          <p>+91 90572 88286 <span>24×7 Emergency Services</span></p>
                         </a>
                       </div>
                       <div className={Style.workingUs}>
@@ -87,7 +87,7 @@ const BookAppointment = () => {
                         <div className={Style.areTime}>
                           <spam>Sunday:</spam> <span>9:00 AM – 1:00 PM</span>
                         </div>
-                        <h5>24×7 Emergency Services</h5>
+                        {/* <h5>24×7 Emergency Services</h5> */}
                       </div>
                     </div>
                   </Col> 

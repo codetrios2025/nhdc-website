@@ -1,4 +1,8 @@
-.topHead{position: relative;padding: 10px 0;background: #eef3fa;}
+header{position: fixed;top:0;left: 0;width: 100%;z-index: 999;background: #fff;}
+header.headerFix{box-shadow: -4px 1px 19px 1px rgba(0, 0, 0, .1);}
+header.headerFix .topHead{margin-top: -66px;}
+header *{transition:.4s;}
+.topHead{position: relative;padding: 10px 0;background: #eef3fa;margin: 0;}
 .logo{position: relative;}
 .logo img{width: 60px;}
 address ul{
@@ -7,10 +11,12 @@ address ul{
   justify-content: flex-end;
 }
 address li{
-  margin-left: 40px;
+  margin-left: 20px;
+  display: flex;align-items: center;
 }
-address li a{
+address li a, address li p{
   display: flex;
+  margin: 0;
   align-items: center;
   font-size: var(--fs-sm);
   color: #16366a;
@@ -24,7 +30,7 @@ address li a p span{
   font-size: 10px;
   font-weight: 500;
 }
-address li a .icon{
+address li .icon{
   width: 30px;
   height: 30px;
   /* background: #22335c; */
@@ -35,7 +41,6 @@ address li a .icon{
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  color: #16366a;
 }
 /* address li a:hover{
   color:#163B7A
@@ -55,7 +60,9 @@ address li a:hover .icon{
   font-weight: 600;
   color: #fff;
 }
+.bookBtn p{color: #fff;}
 .bookBtn .icon{margin-right: 10px;font-size: 20px;position: relative;top: -2px;}
+.bookBtn:hover p{color: #000;}
 .bookBtn:hover{
   background: #FFD11A;
   color: #000;
@@ -74,11 +81,12 @@ nav ul li{
 nav ul li a{
   font-weight: 600;
   color: #16366a;
-  padding: 24px 0;
+  padding: 32px 5px;
   display: block;
   border-bottom: 2px solid transparent;
   font-size: var(--fs-sm);
 }
+header.headerFix nav ul li a{padding: 24px 0;}
 nav ul li a:hover, nav ul li a.active{
    border-color: #e0326f;
   color:#e0326f
@@ -106,13 +114,34 @@ nav ul li {
 @media only screen and (max-width: 991px) {
 address li a .icon{width: 22px;height: auto;font-size: 20px;margin-right: 5px;}
 nav ul li {margin-left: 22px;}
-
+header.headerFix .topHead {
+    margin-top: -60px;
+}
 }
 
 @media only screen and (max-width: 767px) {
-  .topHead ul li:first-child{display: none;}
-  .bookBtn {padding: 5px 8px;font-size: 11px;}
-  .bookBtn .icon{font-size: 14px}
+  header.headerFix nav ul li a{padding: 15px 20px;}
+header.headerFix .topHead {
+    margin-top: -60px;
+}  
+    address li {
+        margin-left: 10px;
+    }
+  .mobNone{display: none;}
+      address li .icon, address li a .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        margin-right: 5px;
+        border-radius: 50%;
+        color: #22335c;
+        border: 1px solid #22335c;
+        margin: 0;
+    }
+    .bookBtn{padding: 0;margin: 0;background: transparent;}
+    .bookBtn:hover{background: transparent;color: #22335c;}
+  /* .bookBtn {padding: 5px 8px;font-size: 11px;}
+  .bookBtn .icon{font-size: 14px} */
 .menuBtn {
         display: block;
         z-index: 1001;

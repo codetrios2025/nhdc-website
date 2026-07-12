@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import AppRoute from "./Components/Routing/AppRoute";
-
+import { Tooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <AppRoute />
+      <Tooltip id="tooltip" place="top" className="smallTooltip" />
     </>
   );
 }

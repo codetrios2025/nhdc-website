@@ -25,7 +25,7 @@ export default function Footer (){
               </a>
               <h5>Your Health, Our Priority</h5>
               <ul>
-                <li><a href="" title=""><TiSocialFacebook /></a></li>
+                {/* <li><a href="" title=""><TiSocialFacebook /></a></li> */}
                 <li><a href="" title=""><IoLogoInstagram /></a></li>
                 <li><a href="" title=""><BsYoutube /></a></li>
                 <li><a href="" title=""><FaWhatsapp /></a></li>
@@ -37,12 +37,11 @@ export default function Footer (){
               <div className={Style.link}>
                 <h4>Quick Link</h4>
                 <ul>
-                  <li><NavLink to="/" title="Home">Home</NavLink></li>
-                    <li><NavLink to="/" title="About Us">About Us</NavLink></li>
-                    <li><NavLink to="/" title="Services">Services</NavLink></li>
-                    <li><NavLink to="/" title="news">News</NavLink></li>
-                    <li><NavLink to="/" title="Health Tips">Health Tips</NavLink></li>
-                    <li><NavLink to="/" title="Videos">Videos</NavLink></li>
+                    <li><NavLink to="/" title="Home">Home</NavLink></li>
+                    <li><NavLink to="/about" title="About Us">About Us</NavLink></li>
+                    <li><NavLink to="/services" title="Services">Services</NavLink></li>
+                    {/* <li><NavLink to="/" title="news">News</NavLink></li> */}
+                    <li><NavLink to="/videos" title="Videos">Videos</NavLink></li>
                     <li><NavLink to="/book-appointment" title="Contact Us">Contact Us</NavLink></li>
                 </ul>
               </div>
@@ -65,17 +64,17 @@ export default function Footer (){
                   </div>
                   <div className={Style.address}>
                     <div className={Style.icon}><BsFillTelephoneFill /></div>
-                    <a href="mailto:namokarhospitaldeoli@gmail.com">namokarhospitaldeoli@gmail.com</a>
+                    <a href="mailto:nhdcdeoli@gmail.com">nhdcdeoli@gmail.com</a>
                   </div>
                   <div className={Style.address}>
                     <div className={Style.icon}><IoIosMail size="20" /></div>
                     <p>
-                      <a href="tel:9829143239">+91 98291 43239</a>, <a href="tel:6375637141">+91 63756 37141</a>
+                      <a href="tel:9057288286">+91 90572 88286 </a>, <a href="tel:9829143239">+91 98291 43239</a>
                     </p>                  
                   </div>
-                  <div className={Style.address}>
+                  <div className={`${Style.address} ${Style.timeSlot}`}>
                     <div className={Style.icon}><FiClock /></div>
-                    <p>24x7 Emergency Services</p>
+                    <p><span><strong>Monday - Saturday:</strong> 9:00 AM – 8:00 PM</span> <span><strong>Sunday:</strong> 9:00 AM – 1:00 PM</span></p>
                   </div>
                 </div>
               </div>
