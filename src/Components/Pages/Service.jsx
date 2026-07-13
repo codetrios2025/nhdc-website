@@ -125,6 +125,18 @@ const services = [
     <div className={Style.servicesPage}>
       <div className={Style.innerBanner}>
           <img src={BannerImg} alt="Namokar Hospital & Diagnostic Centre" />
+          <div className={Style.content}>
+            <Container>
+              <Row>
+                <Col>
+                <div className={Style.box}>
+                    <h1>Our Medical Services</h1>
+                    <p>Comprehensive pediatric healthcare, asthma & allergy care, preventive medicine and advanced diagnostic services for children and families.</p>
+                </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
       </div>
       <div className={`${Style.mainServices} ${Style.commonSpace}`}>
         <Container>

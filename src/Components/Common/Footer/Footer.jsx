@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import Style from './Footer.module.css';
 import Logo from '../../../assets/images/nhdc-logo.png';
-import CodeTrios from '../../../assets/images/codetrios.webp';
+import CodeTrios from '../../../assets/images/codetrios_logo.webp';
 import { TiSocialFacebook } from "react-icons/ti";
 import { IoLogoInstagram } from "react-icons/io";
 import { BsYoutube } from "react-icons/bs";
@@ -49,10 +49,9 @@ export default function Footer (){
                 <h4>Our Services</h4>
                 <ul>
                   <li><NavLink to="/" title="Child Specialist Care">Child Specialist Care</NavLink></li>
-                  <li><NavLink to="/" title="Asthma & Allergy Care">Asthma & Allergy Care</NavLink></li>
-                  <li><NavLink to="/" title="OPD Consultation">OPD Consultation</NavLink></li>
-                  <li><NavLink to="/" title="Diagnostics">Diagnostics</NavLink></li>
-                  <li><NavLink to="/" title="Emergency Care">Emergency Care</NavLink></li>
+                  <li><NavLink to="/" title="Asthma & Allergy Care">Asthma & Allergy Clinic</NavLink></li>
+                  <li><NavLink to="/" title="Vaccination & Immunization">Vaccination & Immunization</NavLink></li>
+                  <li><NavLink to="/" title="Advanced Diagnostic Services">Advanced Diagnostic Services</NavLink></li>
                 </ul>
               </div>
               <div className={Style.link}>

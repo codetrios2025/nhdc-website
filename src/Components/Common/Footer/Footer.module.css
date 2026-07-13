@@ -10,8 +10,8 @@ footer{margin-top: 20px;}
 .footerLink .link:first-child{width: 25%;}
 .footerLink .link{width: 30%;}
 .footerLink .link:last-child{width: 45%;}
-.footerLink .link ul, .addresInfo{border-left: 1px solid #e7e7e7;padding-left: 30px;height: 90%;padding-top: 10px;}
-.footerLink h4{font-weight: 700;font-size: var(--fs-md);color: #16366a;margin-left: 30px;}
+.footerLink .link ul, .addresInfo{border-left: 1px solid #e7e7e7;padding-left: 20px;height: 90%;padding-top: 10px;}
+.footerLink h4{font-weight: 700;font-size: var(--fs-md);color: #16366a;margin-left: 20px;}
 .footerLink ul li{margin-bottom: 15px;}
 .footerLink ul li a{display: block;color: #16366a;line-height: normal;font-weight: 400;}
 .footerLink ul li a:hover, .info ul li a:hover{color: #e0326f;}
@@ -28,8 +28,8 @@ footer{margin-top: 20px;}
 .timeSlot p{display: flex;flex-direction: column;}
 .timeSlot p strong{font-weight: 600;}
 @media only screen and (max-width: 1400px) {
-  .footerLink h4{margin-left: 20px;}  
-.footerLink .link ul, .addresInfo{padding-left: 20px;}
+  .footerLink h4{margin-left: 10px;}  
+.footerLink .link ul, .addresInfo{padding-left: 10px;}
 .footerLink ul li {margin-bottom: 10px;}  
 .footerLink ul li a{font-size: 13px;}  
 .link .address p, .link .address a{line-height: 20px;font-size: 13px;}  
@@ -47,6 +47,7 @@ footer{margin-top: 20px;}
 .footerLink .link:first-child{width: 50%;}
 .footerLink .link{width: 50%;}
 .footerLink .link:last-child{width: 100%;}
+
 }
 @media only screen and (max-width: 767px) {
 .footerLink h4{margin-left: 0;}

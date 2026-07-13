@@ -91,7 +91,7 @@
 /* ABout Page CSS  */
 .innerBanner{position: relative;margin-top: 130px;}
 .innerBanner img{width: 100%;height: 400px;object-fit: cover;display: block;}
-.innerBanner .content{position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: flex;align-items: center;color: #16366a;background: linear-gradient(272deg, rgb(243 247 252 / 0%) 20%, rgb(243 247 252 / 100%) 44%, rgba(243 247 252) 100%);;}
+.innerBanner .content{position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: flex;align-items: center;color: #16366a;background: linear-gradient(272deg, rgb(243 247 252 / 0%) 20%, rgb(243 247 252 / 100%) 94%, rgba(243 247 252) 100%);}
 .innerBanner .content .box{width: 500px;max-width: 100%;}
 .innerBanner .content p{line-height: 30px;;}
 .whoWe{position: relative;background: #fff;padding: 60px 0 30px;}
@@ -187,16 +187,30 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);}
-.mainContainer .serviceBox{flex: 1;padding: 0 10px 15px;border-radius: 10px;box-shadow:0 0px 9px rgba(16, 45, 92, 0.08), 0 0px 0px rgba(16, 45, 92, 0.05);border:1px solid rgba(15, 53, 109, 0.06);}
+.mainContainer .serviceBox{flex: 1;padding: 0 10px 75px;border-radius: 10px;box-shadow:0 0px 9px rgba(16, 45, 92, 0.08), 0 0px 0px rgba(16, 45, 92, 0.05);border:1px solid rgba(15, 53, 109, 0.06);position: relative;}
 .mainContainer .serviceBox img{width: 100%;border-radius: 10px;height: 270px;object-fit: cover;margin: -10px 0 0;}
 .mainContainer .serviceBox .mainIcon{width: 80px;height: 80px;margin: -10px auto 0;padding: 10px;background: #fff;border-radius: 50%;position: relative;z-index: 1;}
 .mainContainer .serviceBox .mainIcon span{    width: 100%;height: 100%;font-size: 40px;display: flex;align-items: center;justify-content: center;background: #16366a;border-radius: 50%;color: #fff;}    
-.mainContainer .serviceBox h3{font-size: var(--fs-lg);margin: 20px 0;}    
+.mainContainer .serviceBox h3{font-size: var(--fs-lg);margin: 20px 0 10px;}    
 .mainContainer .serviceBox p{font-size: 13px;line-height: 24px;margin: 0;}
 .mainContainer .serviceBox ul{margin: 10px 0 0;}
-.mainContainer .serviceBox ul li .icon{position: relative;top: -2px;margin-right: 6px;font-size: 12px;}
+.mainContainer .serviceBox ul li .icon{position: relative;top: 0;margin-right: 6px;font-size: 12px;}
 .mainContainer .serviceBox ul li{font-size: 13px;line-height: 24px;margin-bottom: 5px;}
-.mainContainer .serviceBox a{text-align: center;padding: 8px 20px;display: block;margin: 20px 50px 0;border: 1px solid #16366a;color: #16366a;border-radius: 4px;font-weight: 500;}
+.mainContainer .serviceBox a {
+    text-align: center;
+    padding: 8px 15px;
+    display: block;
+    margin: 0;
+    border: 1px solid #16366a;
+    color: #16366a;
+    border-radius: 4px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 180px;
+}
 .mainContainer .serviceBox:nth-child(2) .mainIcon span{background: #06704c;}
 .mainContainer .serviceBox:nth-child(2) h3, .mainContainer .serviceBox:nth-child(2) ul li .icon{color: #06704c;}
 .mainContainer .serviceBox:nth-child(2) a{color: #06704c;border-color: #06704c;}
@@ -244,10 +258,11 @@
 .diagnosticsElem .leftArea li{line-height: 30px;}
 .diagnosticsElem .leftArea li .icon{margin-right: 10px;}
 .diagnoServices.whyChoose p{text-align: center;}
-.diagnoServices.whyChoose .whyChooseContainer{background: #fff;    box-shadow: 0px 1px 11px 0px #00000024;}
-.diagnoServices.whyChoose .whyChooseElem{gap: 10px;margin-bottom: 30px;}
+.diagnoServices.whyChoose .whyChooseContainer{background: #fff;    box-shadow: 0px 1px 11px 0px #00000024;padding: 40px;}
+.diagnoServices.whyChoose .whyChooseElem{gap: 30px;margin-bottom: 30px;display: grid;grid-template-columns: repeat(3, 1fr);}
+
 .bookText{text-align: center;}
-.diagnoServices.whyChoose .whyChooseContainer .box{    border: 1px solid #e4e8ec!important;padding: 0 10px;border-radius: 10px;height: 210px;box-shadow: 0px 1px 5px 0px #00000024}
+.diagnoServices.whyChoose .whyChooseContainer .box{flex: auto;    border: 1px solid #e4e8ec!important;padding: 0 10px;border-radius: 10px;height: 210px;}
 .diagnoServices.whyChoose .whyChooseElem .box h4{    margin: 15px 0 7px;height: 34px;font-size: 14px;}
 .diagnoServices.whyChoose .whyChooseElem .box p {line-height: 22px;}
 .diagnoServices.whyChoose .whyChooseContainer .box:nth-child(2) .icon{color:#2e8de0}
@@ -304,6 +319,7 @@
 .whyUs .content h5{text-align: left;}
 .whyUs .content ul li{padding: 0 10px 0 0;}
 .whyChooseElem .box{padding: 0 5px;}
+.mainContainer{gap: 20px;}
 }
 
 @media only screen and (max-width: 1199px) {
@@ -386,6 +402,7 @@
 .whyChooseElem .box p{line-height: 22px;}
 .medicalSec ul{flex-wrap: wrap;}
 .medicalSec ul li{width: 25%;}
+.diagnoServices.whyChoose .whyChooseElem{grid-template-columns: repeat(2, 1fr);}
 }
 
 
@@ -409,7 +426,7 @@
     flex-direction: column;
 }
 .videoHead>div{width:100%;margin-bottom: 20px}
-.videoContainer{padding: 25px 15px 10px;}
+.videoContainer{padding: 30px 15px 30px;}
 .drConainer{flex-direction: column;padding: 30px 15px 0;background: transparent!important;}
 .drConainer .drImg{order:2;        width: 200px;
         margin: 0 auto;}
@@ -435,7 +452,7 @@
 .formHead .icon {font-size: 40px;margin-right: 10px;}
 .formHead h2{font-size: 16px;}
 .innerBanner img{height: 270px;}
-.innerBanner .content{    background: linear-gradient(272deg, rgb(243 247 252 / 0%) -30%, rgb(243 247 252 / 100%) 44%, rgba(243 247 252) 100%);}
+.innerBanner .content{    background: linear-gradient(272deg, rgb(243 247 252 / 0%) -30%, rgb(243 247 252 / 100%) 74%, rgba(243 247 252) 100%)}
 .innerBanner .content .box h1{font-size: 22px;}
 .innerBanner .content .box p{line-height: normal;}
 .formHead .closeBtn{    top: 0;right: -5px;    width: 30px;    height: 30px;}
@@ -444,6 +461,7 @@
 .overViewCOntainer{padding: 25px 15px;}
 .overViewCOntainer h2{margin-bottom: 20px;}
 .specialItem .content{padding: 15px;}
+.diagnoServices.whyChoose .whyChooseContainer{padding: 30px 15px;}
 }
 
 @media only screen and (max-width: 580px) {
@@ -461,4 +479,5 @@
     }
 
 .overView ul{flex-direction: column;}    
+.diagnoServices.whyChoose .whyChooseElem{grid-template-columns: repeat(1, 1fr);}
 }

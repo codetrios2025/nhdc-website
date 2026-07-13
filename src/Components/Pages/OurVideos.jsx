@@ -78,7 +78,6 @@ const getYoutubeId = (url) => {
           </Col>
         </Row>
       </Container>
-      <Support />
     </div>
   )
 }

@@ -22,6 +22,18 @@ const AboutUs = () =>{
     <div className={Style.aboutPage}>
       <div className={Style.innerBanner}>
           <img src={BannerImg} alt="Namokar Hospital & Diagnostic Centre" />
+          <div className={Style.content}>
+            <Container>
+              <Row>
+                <Col>
+                <div className={Style.box}>
+                    <h1>About Namokar Hospital & Diagnostic Centre</h1>
+                    <p>Committed to delivering compassionate pediatric healthcare, advanced diagnostics, and trusted medical services with excellence for over 25+ years.</p>
+                </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
       </div>
       <OurDoctor />
       <div className={`${Style.whoWe} ${Style.commonSpace}`}>
