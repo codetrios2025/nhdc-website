@@ -117,6 +117,7 @@ const services = [
       "ImmunoCAP",
       "EEG",
       "Sonography",
+      "X-ray",
     ],
   },
 ];
