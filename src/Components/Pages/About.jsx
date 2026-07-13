@@ -45,7 +45,7 @@ const AboutUs = () =>{
                 <div className={Style.box}>
                   <div className={Style.icon}><FaPeopleGroup /></div>
                   <div className={Style.content}>
-                    <h3>10+ <span>Years of Service</span></h3>
+                    <h3>25+ <span>Years of Service</span></h3>
                     <p>Providing trusted healthcare services since our establishment.</p>
                   </div>
                 </div>
@@ -59,8 +59,9 @@ const AboutUs = () =>{
                 <div className={Style.box}>
                   <div className={Style.icon}><FaUserDoctor /></div>
                   <div className={Style.content}>
-                    <h3>15+ <span>Expert Doctors</span></h3>
-                    <p>Dedicated specialists committed to compassionate treatment.</p>
+                    <h3>Clinical<span>Excellence</span> </h3>
+                    <p>  We combine medical knowledge, modern technology, and continuous
+                          learning to deliver high-quality healthcare services.</p>
                   </div>
                 </div>
                 <div className={Style.box}>
