@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
 import InstaVideo from '../Home/InstaVideo'
@@ -8,7 +8,9 @@ import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
 
 const OurVideos = () =>{
+  
   const [activeVideo, setActiveVideo] = useState(null);
+  const videoRefs = useRef({});
   const videos = [
   {
     title: "Child Vaccination Guide",
@@ -49,50 +51,155 @@ const OurVideos = () =>{
   },
 ];
 // get youtube id
-const getYoutubeId = (url) => {
-  const regExp =
-    /^.*(?:youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|watch\?.+&v=)([^#&?]*).*/;
-  const match = url.match(regExp);
-  return match && match[1].length === 11 ? match[1] : null;
-};
+const getVideoType = (url) => {
+    if (!url) return "unknown";
+
+    if (
+      url.includes("instagram.com") ||
+      url.includes("instagr.am")
+    ) {
+      return "instagram";
+    }
+
+    if (
+      url.includes("youtube.com") ||
+      url.includes("youtu.be")
+    ) {
+      return "youtube";
+    }
+
+    if (/\.(mp4|webm|ogg)(\?.*)?$/i.test(url)) {
+      return "mp4";
+    }
+
+    return "unknown";
+  };
+
+  const getYoutubeId = (url) => {
+    if (!url) return null;
+
+    try {
+      const parsed = new URL(url);
+
+      // Shorts
+      if (parsed.pathname.startsWith("/shorts/")) {
+        return parsed.pathname.split("/")[2];
+      }
+
+      // Watch
+      if (parsed.searchParams.get("v")) {
+        return parsed.searchParams.get("v");
+      }
+
+      // youtu.be
+      if (parsed.hostname === "youtu.be") {
+        return parsed.pathname.slice(1);
+      }
+
+      // Embed
+      if (parsed.pathname.startsWith("/embed/")) {
+        return parsed.pathname.split("/")[2];
+      }
+
+      return null;
+    } catch {
+      return null;
+    }
+  };
+
   return(
     <div className={`${Style.videoSec} ${Style.commonSpace}`}>
       <Container>
         <Row>
           <Col>
             <div className={Style.videoContainer}>
-              <div className={'watchVideo ' + Style.videoElem}>
-                {videos.map((item, index) =>{
-                  // const videoId = getYoutubeId(item.url)
-                  return(
-                    <div className={Style.videoItem} key={index}>
-                      {/* <div className={Style.videoFrame}>
-                        {activeVideo === videoId ? (
-                          <iframe
-                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-                            title={item.title}
-                            width="100%"
-                            height="100%"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                          />
-                        ) : (
-                          <>
-                          <img src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} alt={item.title} loading="lazy" />
-                          <button onClick={() => setActiveVideo(videoId)} className={'flexCenter ' + Style.playBtn}><FaPlay /></button>
-                          </>
-                        )}
-                      </div> */}
-                      <div >
-                          <InstaVideo data={item.url}/>
-                        </div>
-                        <div className={Style.content}>
-                        <h3>{item.title}</h3>
-                      </div>  
+              <div className={"watchVideo " + Style.videoElem}>
+                {videos.map((item, index) => {
+                  const type = getVideoType(item.url);
+                  const videoId = getYoutubeId(item.url);
+
+                  return (
+                    <div
+                      className={Style.videoItem}
+                      key={index}
+                    >
+                      {/* Instagram */}
+                      {type === "instagram" && (
+                        <>
+                          <InstaVideo data={item.url} />
+                          <div className={Style.content}>
+                            <h3>{item.title}</h3>
+                          </div>
+                        </>
+                        
+                      )}
+
+                      {/* YouTube */}
+                      {type === "youtube" && (
+                        <>
+                          <div className={Style.videoFrame}>
+                            {activeVideo === videoId ? (
+                              <iframe
+                                width="100%"
+                                height="100%"
+                                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                                title={item.title}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                              />
+                            ) : (
+                              <>
+                                <img
+                                  src={`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}
+                                  alt={item.title}
+                                  onError={(e) => {
+                                    e.target.src = `https://i.ytimg.com/vi/${videoId}/mqdefault.jpg`;
+                                  }}
+                                />
+
+                                <button
+                                  className={Style.playBtn}
+                                  onClick={() =>
+                                    setActiveVideo(videoId)
+                                  }
+                                >
+                                  <FaPlay />
+                                </button>
+                              </>
+                            )}
+                          </div>
+                          <div className={Style.content}>
+                            <h3>{item.title}</h3>
+                          </div>
+                        </>
+                      )}
+
+                      {/* MP4 */}
+                      {type === "mp4" && (
+                        <>
+                          <div className={Style.videoFrame}>
+                            <video
+                              ref={(el) =>
+                                (videoRefs.current[index] = el)
+                              }
+                              controls
+                              preload="metadata"
+                              width="100%"
+                            >
+                              <source
+                                src={item.url}
+                                type="video/mp4"
+                              />
+                            </video>
+                          </div>
+                          <div className={Style.content}>
+                            <h3>{item.title}</h3>
+                          </div>
+                        </>
+                      )}
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
