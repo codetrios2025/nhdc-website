@@ -27,8 +27,9 @@ const OurDoctor = () =>{
               <div className={Style.drContent}>
                 <h2>Dr. Rajesh Jain</h2>
                 <p> <span>MBBS | D.C.H. | A.A.C. </span>
-                  <span> M.I.A.P. | M.I.S.C.C.M. | M.N.N.F.</span></p>
-                <p>Child Specialist, Asthma & Allergy Specialist</p>
+                  <span> M.I.A.P. | M.I.S.C.C.M. | M.N.N.F.</span>
+                  <span>Child specialist and asthma allergy specialist</span></p>
+                
                 <p>Dr. Rajesh Jain is dedicated to providing comprehensive pediatric healthcare and asthma management services. With years of experience in child healthcare, he focuses on accurate diagnosis, compassionate treatment, and preventive care to ensure the healthy growth and development of every child.</p>
                 <ul>
                   <li><div className={Style.icon}><FaUserMd /></div> Child Specialist</li>

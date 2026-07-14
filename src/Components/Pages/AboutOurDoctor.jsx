@@ -29,7 +29,7 @@ const OurDoctor = () =>{
                 <p>
                   <span>MBBS | D.C.H. | A.A.C. </span>
                   <span> M.I.A.P. | M.I.S.C.C.M. | M.N.N.F.</span>
-                  
+                   <span>Child specialist and asthma allergy specialist</span>
                 </p>
 
                 <p>
