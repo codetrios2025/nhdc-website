@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
 import serviceImg01 from '../../assets/images/child-care-img.webp';
-import serviceImg03 from '../../assets/images/services_img03.png';
+import serviceImg03 from '../../assets/images/services_img03.webp';
 import serviceImg02 from '../../assets/images/asthma.webp';
-import serviceImg04 from '../../assets/images/services_img04.png';
+import serviceImg04 from '../../assets/images/services_img04.webp';
 // icon
 import { GiLungs } from "react-icons/gi";
 import {FaHeartbeat, FaCheckCircle} from "react-icons/fa";
@@ -86,6 +86,7 @@ const Services = () =>{
                         <span className={Style.icon}><FaCheckCircle /></span>Routine Health Checkups
                       </li>
                     </ul>
+                    <a href="/service-detail" title="" className={Style.primeryBtn}>Learn More</a>
                   </div>
                 </article >
                 <article  className={Style.specialItem}>
@@ -122,14 +123,9 @@ const Services = () =>{
                         <span className={Style.icon}><FaCheckCircle /></span>Follow-up Care Programs
                       </li>
                     </ul>
+                    <a href="/service-detail" title="" className={Style.primeryBtn}>Learn More</a>
                   </div>
                 </article >
-              </div>
-            </Col>
-          </Row>
-           <Row>
-            <Col>
-              <div className={Style.specialContainer}>
                 <article  className={Style.specialItem}>
                   <figure>
                     <img 
@@ -151,6 +147,7 @@ const Services = () =>{
                       <li><span className={Style.icon}><FaCheckCircle /></span> Dust, Pollen & Pet Allergy Assessment</li>
                       <li><span className={Style.icon}><FaCheckCircle /></span> Allergy Consultation & Management</li>
                     </ul>
+                    <a href="/service-detail" title="" className={Style.primeryBtn}>Learn More</a>
                   </div>
                 </article >
                 <article  className={Style.specialItem}>
@@ -178,6 +175,7 @@ const Services = () =>{
                         <span className={Style.icon}><FaCheckCircle /></span>Follow-up Care Programs
                       </li>
                     </ul>
+                    <a href="/service-detail" title="" className={Style.primeryBtn}>Learn More</a>
                   </div>
                 </article >
               </div>

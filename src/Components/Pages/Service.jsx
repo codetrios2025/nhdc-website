@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
 import BannerImg from '../../assets/images/hospital-slide.webp';
-import serviceImg01 from '../../assets/images/services_img01.webp';
 import Support from '../Home/Support';
 import OurDoctor from '../Home/OurDoctor';
 import childImg from "../../assets/images/child-care-img.webp";
 import asthmaImg from "../../assets/images/asthma.webp";
 import newbornImg from "../../assets/images/newbornImg.webp";
-import vaccineImg from "../../assets/images/3.png";
+import vaccineImg from "../../assets/images/services_img04.webp";
 import emergencyImg from "../../assets/images/namokar_img01.webp";
 import diagnosticImg from "../../assets/images/namokar_img02.webp";
 //icon
@@ -117,6 +116,7 @@ const services = [
       "ImmunoCAP",
       "EEG",
       "Sonography",
+      "X-ray",
     ],
   },
 ];
@@ -125,6 +125,18 @@ const services = [
     <div className={Style.servicesPage}>
       <div className={Style.innerBanner}>
           <img src={BannerImg} alt="Namokar Hospital & Diagnostic Centre" />
+          <div className={Style.content}>
+            <Container>
+              <Row>
+                <Col>
+                <div className={Style.box}>
+                    <h1>Our Medical Services</h1>
+                    <p>Comprehensive pediatric healthcare, asthma & allergy care, preventive medicine and advanced diagnostic services for children and families.</p>
+                </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
       </div>
       <div className={`${Style.mainServices} ${Style.commonSpace}`}>
         <Container>

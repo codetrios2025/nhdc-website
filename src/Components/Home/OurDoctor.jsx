@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import Doctor from '../../assets/images/dr.rakesh.webp';
+import Doctor from '../../assets/images/rajesh.webp';
 //icon
 import { GoArrowRight } from "react-icons/go";
 import { FaStethoscope, FaUserMd, FaSyringe, FaChild, FaHeartbeat } from "react-icons/fa";
@@ -26,7 +26,7 @@ const OurDoctor = () =>{
               </div>
               <div className={Style.drContent}>
                 <h2>Dr. Rajesh Jain</h2>
-                <p><span>MBBS</span> <span>D.C.H. (partially visible after MBBS)</span>
+                <p><span>MBBS</span> <span>D.C.H. </span>
                 <span>A.A.C.</span> <span>M.I.A.P. (Member of Indian Academy of Pediatrics)</span> <span>M.I.S.C.C.M. , M.I.A.P. , M.N.N.F.</span></p>
                 <p>Child Specialist & Asthma Care Expert</p>
                 <p>Dr. Rajesh Jain is dedicated to providing comprehensive pediatric healthcare and asthma management services. With years of experience in child healthcare, he focuses on accurate diagnosis, compassionate treatment, and preventive care to ensure the healthy growth and development of every child.</p>

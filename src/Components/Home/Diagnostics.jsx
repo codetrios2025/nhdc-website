@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Style from '../CSS/Global.module.css';
-import serviceImg01 from '../../assets/images/services_img01.webp';
+import serviceImg01 from '../../assets/images/vaccination-img.webp';
 //icon
 import { FaCheckCircle, FaWind, FaLeaf } from "react-icons/fa";
 import { IoCalendarOutline } from "react-icons/io5";
-import { GiLungs } from "react-icons/gi";
-import { FaVial , FaBrain} from "react-icons/fa6";
+import { GiLungs  } from "react-icons/gi";
+import { FaVial , FaBrain, FaXRay } from "react-icons/fa6";
 import { MdMonitorHeart } from "react-icons/md";
 import BookingForm from "../Booking/BookingForm";
 
@@ -58,6 +58,12 @@ const Diagnostics = () =>{
                   <div className={Style.icon}><MdMonitorHeart /></div>
                   <h4>Sonography (Ultrasound)</h4>
                   <p>Safe imaging test to view internal organs, tissues and blood flow.</p>
+                </div>
+                
+                 <div className={Style.box}>
+                  <div className={Style.icon}><FaXRay   /></div>
+                  <h4>X-Ray</h4>
+                  <p>Imaging test to view bones and internal organs.</p>
                 </div>
               </div>
               {/* <div className={'flexCenter ' + Style.bookText}>

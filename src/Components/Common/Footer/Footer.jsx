@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import Style from './Footer.module.css';
 import Logo from '../../../assets/images/nhdc-logo.png';
-import CodeTrios from '../../../assets/images/codetrios.webp';
+import CodeTrios from '../../../assets/images/codetrios_logo.webp';
 import { TiSocialFacebook } from "react-icons/ti";
 import { IoLogoInstagram } from "react-icons/io";
 import { BsYoutube } from "react-icons/bs";
@@ -26,9 +26,9 @@ export default function Footer (){
               <h5>Your Health, Our Priority</h5>
               <ul>
                 {/* <li><a href="" title=""><TiSocialFacebook /></a></li> */}
-                <li><a href="" title=""><IoLogoInstagram /></a></li>
-                <li><a href="" title=""><BsYoutube /></a></li>
-                <li><a href="" title=""><FaWhatsapp /></a></li>
+                <li><a href="https://www.instagram.com/namokar_hospital/" title="" target="_blank" rel="noopener noreferrer"><IoLogoInstagram /></a></li>
+                <li><a href="https://www.youtube.com/@drrajeshjain9176" title="" target="_blank" rel="noopener noreferrer"><BsYoutube /></a></li>
+                <li><a href="https://wa.me/9829143239" title="" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
               </ul>
             </div>
           </Col>
@@ -49,10 +49,9 @@ export default function Footer (){
                 <h4>Our Services</h4>
                 <ul>
                   <li><NavLink to="/" title="Child Specialist Care">Child Specialist Care</NavLink></li>
-                  <li><NavLink to="/" title="Asthma & Allergy Care">Asthma & Allergy Care</NavLink></li>
-                  <li><NavLink to="/" title="OPD Consultation">OPD Consultation</NavLink></li>
-                  <li><NavLink to="/" title="Diagnostics">Diagnostics</NavLink></li>
-                  <li><NavLink to="/" title="Emergency Care">Emergency Care</NavLink></li>
+                  <li><NavLink to="/" title="Asthma & Allergy Care">Asthma & Allergy Clinic</NavLink></li>
+                  <li><NavLink to="/" title="Vaccination & Immunization">Vaccination & Immunization</NavLink></li>
+                  <li><NavLink to="/" title="Advanced Diagnostic Services">Advanced Diagnostic Services</NavLink></li>
                 </ul>
               </div>
               <div className={Style.link}>

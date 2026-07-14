@@ -7,7 +7,7 @@ import InstaVideo from "../Home/InstaVideo";
 import OurVideos from "./OurVideos";
 import { GoArrowRight } from "react-icons/go";
 import { FaPlay } from "react-icons/fa";
-
+import Support from "../Home/Support";
 const NHDCVideos = () =>{
   const [activeVideo, setActiveVideo] = useState(null);
   const [videos, setVideos] = useState([]);
@@ -23,11 +23,13 @@ const NHDCVideos = () =>{
           <Col>
             <div className={Style.NHDCVideoSec}>
               <h2>Our Videos</h2>
+              <OurVideos/>
             </div>
-            <OurVideos/>
+            
           </Col>
         </Row>
       </Container>
+      <Support />
     </div>
   )
 }
