@@ -16,12 +16,33 @@ const OurVideos = () =>{
   },
   {
     title: "Asthma Symptoms & Prevention",
+    url: "https://www.instagram.com/p/DVREIEZArN3/",
+  },{
+    title: "Prevention of Seasonal Allergy",
     url: "https://www.instagram.com/p/DZ1whPDJgD_/",
+  },{
+    title: "ITS/NTS Vaccination Guide",
+    url: "https://www.instagram.com/p/DYRZZUZpnp1/",
+  },{
+    title: "Jaundice in Newborns",
+    url: "https://www.instagram.com/p/DW_GN_VAt2b/",
+  },{
+    title: "Pertussis (Whooping Cough) Vaccination",
+    url: "https://www.instagram.com/p/DU78UMBCTRW/",
   },
   {
-    title: "Seasonal Allergy Care Asthma Symptoms & Prevention",
-    url: "https://www.instagram.com/p/DVREIEZArN3/",
+    title: "Allergy Rhinitis & Asthma ",
+    url: "https://www.instagram.com/p/DU0KpmKCe10/",
   },
+  {
+    title: "BCG Vaccination ",
+    url: "https://www.instagram.com/p/DUk9L4zCSmw/",
+  },
+  {
+    title: "Diaper Precautions ",
+    url: "https://www.instagram.com/p/DUAp8VPCZxj//",
+  },
+ 
   {
     title: "Newborn Care Tips",
     url: "https://www.instagram.com/p/DZzde87pquI/",
@@ -67,9 +88,9 @@ const getYoutubeId = (url) => {
                       <div >
                           <InstaVideo data={item.url}/>
                         </div>
-                       {/* <div className={Style.content}>
+                        <div className={Style.content}>
                         <h3>{item.title}</h3>
-                      </div>  */}
+                      </div>  
                     </div>
                   )
                 })}

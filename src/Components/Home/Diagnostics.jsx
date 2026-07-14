@@ -59,11 +59,7 @@ const Diagnostics = () =>{
                   <h4>Sonography (Ultrasound)</h4>
                   <p>Safe imaging test to view internal organs, tissues and blood flow.</p>
                 </div>
-                  <div className={Style.box}>
-                  <div className={Style.icon}><MdMonitorHeart /></div>
-                  <h4>Sonography (Ultrasound)</h4>
-                  <p>Safe imaging test to view internal organs, tissues and blood flow.</p>
-                </div>
+                
                  <div className={Style.box}>
                   <div className={Style.icon}><FaXRay   /></div>
                   <h4>X-Ray</h4>

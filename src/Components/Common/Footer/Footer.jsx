@@ -26,9 +26,9 @@ export default function Footer (){
               <h5>Your Health, Our Priority</h5>
               <ul>
                 {/* <li><a href="" title=""><TiSocialFacebook /></a></li> */}
-                <li><a href="" title=""><IoLogoInstagram /></a></li>
-                <li><a href="" title=""><BsYoutube /></a></li>
-                <li><a href="" title=""><FaWhatsapp /></a></li>
+                <li><a href="https://www.instagram.com/namokar_hospital/" title="" target="_blank" rel="noopener noreferrer"><IoLogoInstagram /></a></li>
+                <li><a href="https://www.youtube.com/@drrajeshjain9176" title="" target="_blank" rel="noopener noreferrer"><BsYoutube /></a></li>
+                <li><a href="https://wa.me/9829143239" title="" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
               </ul>
             </div>
           </Col>
