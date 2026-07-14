@@ -26,7 +26,7 @@ const OurDoctor = () =>{
               </div>
               <div className={Style.drContent}>
                 <h2>Dr. Rajesh Jain</h2>
-                <p> <span>MBBS | D.C.H. | A.A.C. </span>
+                <p><span>MBBS | D.C.H. | A.A.C. </span>
                   <span> M.I.A.P. | M.I.S.C.C.M. | M.N.N.F.</span>
                   <span>Child specialist and asthma allergy specialist</span></p>
                 
