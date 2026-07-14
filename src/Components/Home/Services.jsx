@@ -8,6 +8,7 @@ import serviceImg04 from '../../assets/images/services_img04.png';
 // icon
 import { GiLungs } from "react-icons/gi";
 import {FaHeartbeat, FaCheckCircle} from "react-icons/fa";
+import { FaShieldVirus } from "react-icons/fa6";
 import { MdOutlineEmergency, MdMedicalServices, MdOutlineChildCare} from "react-icons/md";
 import { TbBulbFilled } from "react-icons/tb";
 
@@ -32,6 +33,11 @@ const Services = () =>{
                 <span className={Style.icon}><GiLungs /></span>
                 <h6>Asthma Care</h6>
                 <p>Allergy & Respiratory</p>
+              </div>
+               <div className={Style.listBox}>
+                <span className={Style.icon}><FaShieldVirus  /></span>
+                <h6>Allergy Treatment</h6>
+                <p>Skin & Allergy Care  </p>
               </div>
               <div className={Style.listBox}>
                 <span className={Style.icon}><FaHeartbeat /></span>

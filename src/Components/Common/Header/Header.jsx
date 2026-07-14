@@ -56,8 +56,19 @@ const Header = () => {
                       <p className={Style.mobNone}>+91 90572 88286</p>
                     </a>
                   </li>
-                   <li data-tooltip-id="tooltip" data-tooltip-content="Time Slot: 9:00 AM – 8:00 PM">
-                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}>Time Slot: 9:00 AM – 8:00 PM</p>
+                    <li>
+                    <a data-tooltip-id="tooltip" data-tooltip-content="9829143239" href="tel:9829143239" >
+                      <div className={Style.icon}><FaHeadset /></div>
+                      <p className={Style.mobNone}>+91 98291 43239</p>
+                    </a>
+                  </li>
+                   <li data-tooltip-id="tooltip" data-tooltip-content="Mon to Sat: 9:00 AM – 2:00 PM , 5:00 PM – 7:00 PM">
+                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}>Mon to Sat: 9 AM – 2 PM , 5 PM – 7 PM  </p>
+                    
+                  </li>
+                   <li data-tooltip-id="tooltip" data-tooltip-content="Sunday: 9:00 AM – 2:00 PM">
+                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}> Sun: 9 AM – 2 PM</p>
+                    
                   </li>
                   <li>
                     <button data-tooltip-id="tooltip" data-tooltip-content="Book Appointment" onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">

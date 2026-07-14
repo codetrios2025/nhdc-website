@@ -73,7 +73,7 @@ export default function Footer (){
                   </div>
                   <div className={`${Style.address} ${Style.timeSlot}`}>
                     <div className={Style.icon}><FiClock /></div>
-                    <p><span><strong>Monday - Saturday:</strong> 9:00 AM – 8:00 PM</span> <span><strong>Sunday:</strong> 9:00 AM – 1:00 PM</span></p>
+                    <p><span><strong>Monday - Saturday:</strong> 9:00 AM – 2:00 PM , 5:00 PM – 7:00 PM</span> <span><strong>Sunday:</strong> 9:00 AM – 2:00 PM</span></p>
                   </div>
                 </div>
               </div>
