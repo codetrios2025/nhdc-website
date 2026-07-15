@@ -40,7 +40,7 @@ const OurDoctor = () =>{
                   <li><div className={Style.icon}><FaChild /></div> Growth Monitoring</li>
                   <li><div className={Style.icon}><FaHeartbeat /></div> Personalized Patient Care</li> */}
                 </ul>
-                <a href="/about" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
+                <a href="nhdc/about" className={'flexCenter ' + Style.primeryBtn} aria-label="Book an Appointment">
                   Know More About Doctor <div className={Style.icon}><GoArrowRight /></div>
                 </a>
               </div>

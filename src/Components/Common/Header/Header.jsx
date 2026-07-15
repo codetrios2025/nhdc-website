@@ -50,25 +50,19 @@ const Header = () => {
                     <a data-tooltip-id="tooltip" data-tooltip-content="nhdcdeoli@gmail.com" href="mailto:nhdcdeoli@gmail.com"  aria-label="Email Namokar Hospital">
                       <div className={Style.icon}><IoIosMail /></div><p className={Style.mobNone}>nhdcdeoli@gmail.com</p></a>     
                   </li>
-                  <li>
-                    <a data-tooltip-id="tooltip" data-tooltip-content="9057288286" href="tel:9057288286" >
-                      <div className={Style.icon}><FaHeadset /></div>
-                      <p className={Style.mobNone}>+91 90572 88286</p>
-                    </a>
+                  <li data-tooltip-id="tooltip" data-tooltip-content="9057288286, 9829143239">
+                    <div className={Style.icon}><FaHeadset /></div>
+                    <div className={Style.numberFlex}>
+                      <a  href="tel:9057288286"><p className={Style.mobNone}>+91 90572 88286</p></a>
+                      <a href="tel:9829143239" ><p className={Style.mobNone}>+91 98291 43239</p></a>
+                    </div>
                   </li>
-                    <li>
-                    <a data-tooltip-id="tooltip" data-tooltip-content="9829143239" href="tel:9829143239" >
-                      <div className={Style.icon}><FaHeadset /></div>
-                      <p className={Style.mobNone}>+91 98291 43239</p>
-                    </a>
-                  </li>
-                   <li data-tooltip-id="tooltip" data-tooltip-content="Mon to Sat: 9:00 AM – 2:00 PM , 5:00 PM – 7:00 PM">
-                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}>Mon to Sat: 9 AM – 2 PM , 5 PM – 7 PM  </p>
-                    
-                  </li>
-                   <li data-tooltip-id="tooltip" data-tooltip-content="Sunday: 9:00 AM – 2:00 PM">
-                    <div className={Style.icon}><FiClock /></div><p className={Style.mobNone}> Sun: 9 AM – 2 PM</p>
-                    
+                   <li data-tooltip-id="tooltip" data-tooltip-content="Mon to Sat: 9:00 AM – 2:00 PM , 5:00 PM – 7:00 PM, Sun: 9 AM – 2 PM">
+                    <div className={Style.icon}><FiClock /></div>
+                    <div>
+                      <p className={Style.mobNone}>Mon to Sat: 9 AM – 2 PM , 5 PM – 7 PM  </p>
+                      <p className={Style.mobNone}> Sun: 9 AM – 2 PM</p>
+                    </div>
                   </li>
                   <li>
                     <button data-tooltip-id="tooltip" data-tooltip-content="Book Appointment" onClick={bookingHandler} type="button" className={Style.bookBtn} aria-label="Book Appointment">
